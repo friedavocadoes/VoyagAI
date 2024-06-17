@@ -4,4 +4,4 @@
 ### Response saved in ```output.txt```
 
 > [!NOTE]
-> Save your Gemini API key as GEM_API_KEY in enviroment variables
+> Save your Gemini API key as `GEM_API_KEY` in enviroment variables
