@@ -1,0 +1,24 @@
+{
+"vacation_spots": [
+{
+"name": "Maldives",
+"description": "Indulge in luxurious overwater bungalows, pristine beaches, and world-class diving in this tropical paradise."
+},
+{
+"name": "Udaipur, India",
+"description": "Explore the 'City of Lakes' with its stunning palaces, romantic boat rides, and vibrant culture."
+},
+{
+"name": "Santorini, Greece",
+"description": "Experience breathtaking sunsets, white-washed villages perched on cliffs, and the iconic blue-domed churches."
+},
+{
+"name": "Paris, France",
+"description": "Enjoy iconic landmarks like the Eiffel Tower and Louvre Museum, indulge in fine dining and romantic strolls along the Seine River."
+},
+{
+"name": "Bali, Indonesia",
+"description": "Discover lush rice paddies, ancient temples, and serene beaches, perfect for relaxation and spiritual rejuvenation."
+}
+]
+}

@@ -1,0 +1,4 @@
+I want you to suggest me 5 vacation spots based on my mood and budget.
+My mood: ${mood}, budget (in indian rupees): ${budget}.
+I want the response to be a json with the name of the place and the details about the same in an object inside the name.
+There shud be no other text or formatting other than the json output

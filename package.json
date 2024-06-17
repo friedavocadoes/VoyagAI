@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@google/generative-ai": "^0.12.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "voyagai",
+  "version": "1.0.0",
+  "main": "pre.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
