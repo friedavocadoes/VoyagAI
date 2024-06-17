@@ -3,4 +3,4 @@
 ### Try it out with node pre
 
 > [!NOTE]
-> save ur Gemini API key as GEM_API_KEY in enviroment variables
+> Save your Gemini API key as GEM_API_KEY in enviroment variables
