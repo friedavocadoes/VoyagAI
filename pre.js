@@ -1,11 +1,9 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const prompt = require('prompt-sync')();
 const fs = require('fs');
-
 const api = process.env.GEM_API_KEY;
 
 const genAI = new GoogleGenerativeAI(api);
-
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
 const mood = prompt("mood: ");
