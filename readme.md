@@ -2,5 +2,5 @@
 
 ### Try it out with node pre
 
-> ![NOTE]
+> [!NOTE]
 > save ur Gemini API key as GEM_API_KEY in enviroment variables
