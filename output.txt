@@ -1,24 +1,24 @@
 {
 "vacation_spots": [
 {
-"name": "Maldives",
-"description": "Indulge in luxurious overwater bungalows, pristine beaches, and world-class diving in this tropical paradise."
+"name": "Goa",
+"description": "A beach paradise with vibrant nightlife, delicious seafood, and stunning beaches. Enjoy water sports, explore historical churches, and soak up the sun."
 },
 {
-"name": "Udaipur, India",
-"description": "Explore the 'City of Lakes' with its stunning palaces, romantic boat rides, and vibrant culture."
+"name": "Coorg",
+"description": "Escape to the lush green hills of Coorg, known for its coffee plantations, rolling hills, and refreshing weather. Explore waterfalls, trek through forests, and enjoy the tranquility."
 },
 {
-"name": "Santorini, Greece",
-"description": "Experience breathtaking sunsets, white-washed villages perched on cliffs, and the iconic blue-domed churches."
+"name": "Rishikesh",
+"description": "A spiritual hub on the banks of the Ganges, known for its yoga and meditation retreats. Experience the holy river, explore ancient temples, and enjoy adventure activities like white water rafting."
 },
 {
-"name": "Paris, France",
-"description": "Enjoy iconic landmarks like the Eiffel Tower and Louvre Museum, indulge in fine dining and romantic strolls along the Seine River."
+"name": "Jaipur",
+"description": "The Pink City of Rajasthan, filled with majestic forts, palaces, and vibrant bazaars. Explore the Hawa Mahal, Amer Fort, and experience the rich culture and history."
 },
 {
-"name": "Bali, Indonesia",
-"description": "Discover lush rice paddies, ancient temples, and serene beaches, perfect for relaxation and spiritual rejuvenation."
+"name": "Munnar",
+"description": "Escape to the hills of Munnar, known for its tea plantations, breathtaking views, and serene atmosphere. Enjoy nature walks, visit tea factories, and experience the tranquility."
 }
 ]
 }
