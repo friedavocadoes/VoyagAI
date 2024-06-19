@@ -2,23 +2,28 @@
 "vacation_spots": [
 {
 "name": "Goa",
-"description": "A beach paradise with vibrant nightlife, delicious seafood, and stunning beaches. Enjoy water sports, explore historical churches, and soak up the sun."
+"description": "Goa is a coastal state in western India known for its beaches, nightlife, and Portuguese colonial architecture. ",
+"pict": "https://www.holidify.com/images/cmsuploads/2021/02/goa-beaches-1.jpg"
 },
 {
-"name": "Coorg",
-"description": "Escape to the lush green hills of Coorg, known for its coffee plantations, rolling hills, and refreshing weather. Explore waterfalls, trek through forests, and enjoy the tranquility."
+"name": "Andaman and Nicobar Islands",
+"description": "A group of islands in the Bay of Bengal, known for their pristine beaches, coral reefs, and diverse marine life.",
+"pict": "https://www.holidify.com/images/cmsuploads/2021/02/andaman-nicobar-islands-1.jpg"
 },
 {
-"name": "Rishikesh",
-"description": "A spiritual hub on the banks of the Ganges, known for its yoga and meditation retreats. Experience the holy river, explore ancient temples, and enjoy adventure activities like white water rafting."
+"name": "Lakshadweep",
+"description": "A group of islands in the Arabian Sea, known for their white sand beaches, turquoise waters, and lush greenery.",
+"pict": "https://www.holidify.com/images/cmsuploads/2021/02/lakshadweep-1.jpg"
 },
 {
-"name": "Jaipur",
-"description": "The Pink City of Rajasthan, filled with majestic forts, palaces, and vibrant bazaars. Explore the Hawa Mahal, Amer Fort, and experience the rich culture and history."
+"name": "Puri, Odisha",
+"description": "A coastal city in Odisha, known for its beaches, Jagannath Temple, and vibrant culture.",
+"pict": "https://www.holidify.com/images/cmsuploads/2021/02/puri-beaches-1.jpg"
 },
 {
-"name": "Munnar",
-"description": "Escape to the hills of Munnar, known for its tea plantations, breathtaking views, and serene atmosphere. Enjoy nature walks, visit tea factories, and experience the tranquility."
+"name": "Pondicherry",
+"description": "A coastal city in Tamil Nadu, known for its French colonial architecture, beaches, and spiritual retreats.",
+"pict": "https://www.holidify.com/images/cmsuploads/2021/02/pondicherry-beaches-1.jpg"
 }
 ]
 }
