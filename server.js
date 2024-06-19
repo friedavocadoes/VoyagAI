@@ -8,13 +8,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
 app.post('/search', async (req, res) => {
-    
     try {
         const mood = req.body.mood;
         const budget = req.body.budget;
@@ -25,14 +23,10 @@ app.post('/search', async (req, res) => {
         // res.send(jtext);
         res.render('forg', {vacation: jtext.vacation_spots});
     } catch {
-        res.send("There was a problem in parsing the response, please try again");
+        res.send("There was a problem parsing the response, please try again");
     }
-    
-    
 })
 
 app.listen(3000, () => {
-    
     console.log(`http://localhost:3000`);
 });
-

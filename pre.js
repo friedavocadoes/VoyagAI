@@ -8,9 +8,9 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
 
 async function run(mood, budget) {
-    const prompt = `I want you to suggest me 5 vacation spots (internationally and and local) based on my mood and budget.
+    const prompt = `I want you to suggest me 5 vacation spots (around the world) based on my mood and budget.
     My mood: ${mood}, budget (in indian rupees): ${budget}.
-    I want the response to be a json with the names of the places, a brief description about each and a hyperlink to a picture of that place (make sure the link is updated and working currently and not take from "https://www.holidify.com") with the key "pict".
+    I want the response to be a json with the names of the places, a brief description about each and a hyperlink to a picture of that place from the internet with the key "pict".
     This is how i want the structure of the json to be: {"vacation_spots":[{"name":<name of the place>, "description":<the description>, "pict":<picture link>}, {"name":<name of the place>, "description":<the description>, "pict":<picture link>}, <and 3 more>]}.
     There shud be no other text or formatting other than the json output, especially the json formatter text ('''json'''). the output should be plain string`;
 
