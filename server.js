@@ -23,10 +23,10 @@ app.post('/search', async (req, res) => {
         
         const text = await run(mood, budget);
         const jtext = JSON.parse(text);
-        res.send(jtext);
         console.log(jtext.vacation_spots[0].name);
+        res.send(jtext);
     } catch {
-        res.send("there was a problem in parsing the response, please try again");
+        res.send("There was a problem in parsing the response, please try again");
     }
     
     
