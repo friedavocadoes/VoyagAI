@@ -1,0 +1,81 @@
+[
+    {
+        "id":1,
+        "name":"Horror",
+        "title":"Adventures in Dreamland",
+        "price":0,
+        "category":"free",
+        "image":"https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mumbai.jpg"
+
+
+    },
+
+    {
+        "id":2,
+        "name":"Comedy ",
+        "title":"Giggles and Guffaws",
+        "price":20,
+        "category":"entertainment",
+        "image":"https://thumbs.dreamstime.com/b/open-book-color-splash-22372033.jpg"
+
+
+    },
+
+    {
+        "id":3,
+        "name":"Sports ",
+        "title":"Giggles and Guffaws",
+        "price":50,
+        "category":"Sports",
+        "image":"https://thumbs.dreamstime.com/b/open-book-color-splash-22372033.jpg"
+
+
+    },
+
+    {
+        "id":4,
+        "name":"Music ",
+        "title":"Giggles and Guffaws",
+        "price":400,
+        "category":"free",
+        "image":"https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mumbai.jpg"
+
+    },
+
+    {
+        "id":5,
+        "name":"Action",
+        "title":"Giggles and Guffaws",
+        "price":200,
+        "category":"Action",
+        "image":"https://www.vecteezy.com/photo/2145384-miniature-couple-riding-a-motorcycle-on-an-old-book-valentine-s-day-concept"
+
+
+    },
+    {
+        "id":6,
+        "name":"Food",
+        "title":"Giggles and Guffaws",
+        "price":0,
+        "category":"free",
+        "image":"https://www.sotc.in/blog/wp-content/uploads/2023/07/Hill-Station-in-kerala.jpg"
+
+    },
+    {
+        "id":7,
+        "name":"Fantasy",
+        "title":"Giggles and Guffaws",
+        "price":0,
+        "category":"free",
+        "image":"https://hblimg.mmtcdn.com/content/hubble/img/agra/mmt/activities/m_activities-agra-taj-mahal_l_400_640.jpg"
+
+    },
+    {
+        "id":5,
+        "name":"Adventure",
+        "title":"Giggles and Guffaws",
+        "price":0,
+        "category":"free",
+        "image":"https://img.veenaworld.com/wp-content/uploads/2023/05/10-Travel-Places-Where-Nature-Takes-Centerstage.jpg"
+    }
+]
