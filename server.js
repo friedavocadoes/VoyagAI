@@ -14,10 +14,11 @@ app.get('/', (req, res) => {
 
 app.post('/search', async (req, res) => {
     try {
+        const loc = req.body.loc;
         const mood = req.body.mood;
         const budget = req.body.budget;
         console.log(req.body.mood);
-        const text = await run(mood, budget);
+        const text = await run(mood, budget, loc);
         const jtext = JSON.parse(text);
         // console.log(jtext.vacation_spots[0].name);
         // res.send(jtext);
