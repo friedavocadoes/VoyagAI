@@ -1,4 +1,4 @@
-### React + Vite + TailWind
+## React + Vite + TailWind
 
 ```
 npm i
