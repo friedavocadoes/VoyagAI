@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>VoyageAI</title>
+</head>
+<body class="h-screen bg-auto bg-scroll " style="background-image: url('voyagai.png')">
+    <header class="flex px-4 py-8 justify-between items-center bg-blue-300/75">
+        <h1 class="text-3xl font-bold text-white">VoyageAI</h1>
+        <nav class="flex space-x-4">
+            <a href="#" class="text-white hover:text-blue-500">Explore</a>
+            <a href="#" class="text-white hover:text-blue-500">Contact</a>
+            <a href="#" class="text-white hover:text-blue-500">Search</a>
+            <button class="bg-green-500 text-white rounded-l px-3 hover:bg-green-700">Login</button>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center pt-16 py-500">
+        <div class="flex flex-col bg-orange-200/75 mb-20 mr-20 ml-20 items-center px-10 rounded-3xl py-10">
+            <h2 class="text-3xl text-center text-gray-900 font-bold py-3">Your SMART Travel Planner</h2>
+            <p class="text-gray-500 text-center text-xl">Explore the world with ease and embark on your next adventure</p>
+            <button class="bg-orange-500 text-white px-10 py-2 rounded-md hover:bg-orange-600 mt-3 items-center">Start planning with AI</button>
+        </div>
+    </main> 
+</body>
 </html>
