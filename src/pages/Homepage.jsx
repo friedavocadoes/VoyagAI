@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
     <div className="bg-cover bg-no-repeat bg-center h-screen" style={{ backgroundImage: `url(/public/voyagai.png)` }}>
       <main className="bg-fixed h-screen flex flex-col justify-center items-center ">
-        <div className="bg-orange-200/80 rounded-xl text-center px-20 py-10 mt-50 items-center ">
+        <div className="bg-orange-200/60 rounded-xl text-center px-20 py-10 mt-50 items-center backdrop-blur-[7px]">
             <h1 className="text-4xl font-bold text-center animate-fade-in-up">
               Your <span style={{ color: 'darkorange' }}>SMART</span> Travel Planner
             </h1>

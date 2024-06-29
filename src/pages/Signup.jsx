@@ -28,7 +28,7 @@ const Signup = () => {
           <h1 className="text-9xl text-left mb-10 text-orange-500">Holiday </h1>
         </div>
         <div className="min-h-screen flex flex-col justify-center items-center px-10">
-          <div className="bg-blue-200/80 rounded-xl text-center px-20 py-10 items-center ">
+          <div className="bg-blue-200/40 rounded-xl text-center px-20 py-10 items-center backdrop-blur-[19px]">
             <h1 className="text-4xl font-bold text-center mb-10 text-white">VoyageAI</h1>
               <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
                 <div className="flex flex-col">
