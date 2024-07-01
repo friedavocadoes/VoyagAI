@@ -17,11 +17,12 @@ const Homepage = () => {
             <p className="text-xl text-center py-4">
               Explore the world with ease and embark on your next adventure.
             </p>
-            <button
+            <Link to="/generator"
               className="px-4 py-2 bg-orange-500 text-white font-bold rounded shadow hover:bg-orange-700"
+
             >
               Start planning with Al
-            </button>
+            </Link>
         </div>
         {/* Conditionally rendered welcome message (unchanged) */}
       </main>
