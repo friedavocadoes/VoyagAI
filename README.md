@@ -1,10 +1,14 @@
-## React + Vite + TailWind
+## Working copy with API integrated
 
 ```
+cd api
 npm i
-npm run dev
+cd ..
+npm i
+
+npm start
 ```
+
 
 > [!NOTE]
-> Boiler plate code to work on frontend.
-> Tailwind is properly setup (check if the test module with h1 tag looks different)
+> Make sure to add `GEM_API_KEY` in your env variables before running
