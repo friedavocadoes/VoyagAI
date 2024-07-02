@@ -1,5 +1,9 @@
-## Working copy with API integrated
+# VoyagAI - API Functional Release (Test)
+Let AI show you places!
 
+#### This is a Demo to play with the behaviors on prompt pull.
+
+- Run the following commands on project terminal:
 ```
 npm i
 cd api
@@ -7,21 +11,34 @@ npm i
 cd ..
 
 npm start
-```
-
-
-## API Requirements
-
-#### Gemini API Key
 
 ```
-  USED IN /api/pre.js
-```
+- Go to http://localhost:5173 (default react port).
+- 
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `GEM_API_KEY` | `string` | **Required**. Your API key |
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`GEM_API_KEY`
 
 > [!NOTE]
-> Add the variable to your environment variable.
+> Acquire your Gemini API key from 
+## Installation
+
+> [!NOTE] This project contains two working node directories.
+
+- Run the following commands on project terminal:
+```bash
+npm i
+cd api
+npm i
+cd ..
+
+npm start
+
+```
+- Go to http://localhost:5173 (default react port).
+- 
 
