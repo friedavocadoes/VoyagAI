@@ -29,10 +29,10 @@ const Results = () => {
   return (
     <>
       {results ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5 m-4">
           {results.map((result, index) => (
             <div key={index} className="bg-orange-300 rounded-lg shadow-md overflow-hidden">
-              <img className="w-full h-48 object-cover" src={result.pict} alt={result.name} />
+              {/* <img className="w-full h-48 object-cover" src={result.pict} alt={result.name} /> */}
               <div className="p-4">
                 <h5 className="text-xl font-bold">{result.name}</h5>
                 <p className="text-gray-700 text-sm mb-2">{result.description}</p>
