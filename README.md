@@ -1,14 +1,27 @@
 ## Working copy with API integrated
 
 ```
+npm i
 cd api
 npm i
 cd ..
-npm i
 
 npm start
 ```
 
 
+## API Requirements
+
+#### Gemini API Key
+
+```http
+  USED IN /api/pre.js
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `GEM_API_KEY` | `string` | **Required**. Your API key |
+
 > [!NOTE]
-> Make sure to add `GEM_API_KEY` in your env variables before running
+> Add the variable to your environment variable.
+
