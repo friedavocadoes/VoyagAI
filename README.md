@@ -14,7 +14,7 @@ npm start
 
 #### Gemini API Key
 
-```http
+```
   USED IN /api/pre.js
 ```
 
