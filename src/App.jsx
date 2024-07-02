@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup'; 
 import Header from './components/Header';
 import Generator from './pages/Generator';
+import Results from './pages/Results';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/login" element={<Login />} />  {/* Login page route */}
           <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
           <Route path="/generator" element={<Generator />} /> {/* The Form Page */}
+          <Route path="/results" element={<Results />} />
         </Routes>
       </Header>
     </BrowserRouter>

@@ -1,11 +1,14 @@
-import React from 'react';
-import { useForm } from 'react-hook-form'; // Assuming you're using react-hook-form for form handling
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+
 
 const Generator = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigateTo = useNavigate();
+
   const onSubmit = (data) => {
-    // Handle form submission logic here
-    console.log(data); // Example: log submitted data
+    navigateTo('/results', { state: { data } });
   };
 
   return (
@@ -17,7 +20,6 @@ const Generator = () => {
           <div className="absolute bg-black opacity-25 inset-0 z-0"></div>
           <div className="w-full lg:max-w-2xl md:max-w-md z-10 items-center text-center">
             <div className="font-bold leading-tight mb-6 mx-auto w-full content-center items-center text-slate-500	">
-              {/* Add your logo or other content here */}
             </div>
           </div>
         </div>
@@ -48,12 +50,12 @@ const Generator = () => {
                     <label className="font-bold text-lg text-white">Current Location</label>
                     <input
                       type="text"
-                      {...register('location', { required: true })}
+                      {...register('loc', { required: true })}
                       placeholder="Where are you travelling from?"
                       className="border rounded-lg py-3 px-3 bg-black border-indigo-600 placeholder-white-500 text-white"
                     />
                     {errors.pin && <span className="text-red-500 text-sm">Give us a location to estimate</span>}
-                    <button type="submit" className="border border-indigo-600 bg-black text-white rounded-lg py-3 font-semibold" routerlink="/dashboard">Findddd!!</button>
+                    <button type="submit" className="border border-indigo-600 bg-black text-white rounded-lg py-3 font-semibold" routerlink="/results">Findddd!!</button>
                   </form>
                 </div>
               </div>
