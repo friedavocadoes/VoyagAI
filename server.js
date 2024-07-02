@@ -1,5 +1,6 @@
 const express = require('express');
 const run = require("./pre.js");
+const cors = require("cors");
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -8,9 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-});
+const corsOptions = {
+    origin: "http://localhost:5173",
+};
+app.use(cors(corsOptions));
 
 app.post('/search', async (req, res) => {
     try {
@@ -20,11 +22,12 @@ app.post('/search', async (req, res) => {
         console.log(req.body.mood);
         const text = await run(mood, budget, loc);
         const jtext = JSON.parse(text);
-        // console.log(jtext.vacation_spots[0].name);
-        // res.send(jtext);
-        res.render('forg', {vacation: jtext.vacation_spots});
+        console.log(jtext.vacation_spots[0].name);
+        
+        res.send(jtext);
     } catch {
-        res.send("There was a problem parsing the response, please try again");
+        console.log('err');
+        res.send({error: "There was a problem parsing the response, please try again"});
     }
 })
 
