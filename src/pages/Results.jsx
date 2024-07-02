@@ -9,13 +9,17 @@ const Results = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (data) {
-        const res = await fetch('http://localhost:3000/search', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data),
-        });
-        const fetchedResults = await res.json();
-        setResults(fetchedResults.vacation_spots);
+        try {
+          const res = await fetch('http://localhost:3000/search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+          });
+          const fetchedResults = await res.json();
+          setResults(fetchedResults.vacation_spots);
+        } catch {
+          setResults([{name: "API Error", description: "There was an error fetching your request. Please try again."}]);
+        }
       }
     };
 
