@@ -2,29 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Homepage = () => {
-
-  const handleClick = (targetPage) => {
-    
-  };
-
   return (
-    <div className="bg-cover bg-no-repeat bg-center h-screen" style={{ backgroundImage: `url(/public/voyagai.png)` }}>
-      <main className="bg-fixed h-screen flex flex-col justify-center items-center ">
-        <div className="bg-orange-200/80 rounded-xl text-center px-20 py-10 mt-50 items-center ">
-            <h1 className="text-4xl font-bold text-center animate-fade-in-up">
-              Your <span style={{ color: 'darkorange' }}>SMART</span> Travel Planner
-            </h1>
-            <p className="text-xl text-center py-4">
-              Explore the world with ease and embark on your next adventure.
-            </p>
-            <button
-              className="px-4 py-2 bg-orange-500 text-white font-bold rounded shadow hover:bg-orange-700"
-            >
-              Start planning with Al
-            </button>
+    <div className="relative px-6 pt-14 flex items-center justify-center min-h-screen">
+      <div className="text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-[#767fb4] sm:text-6xl">Your <span class="text-[#f9b17a] ">SMART </span> Travel Planner</h1>
+      <p class="mt-6 text-lg leading-8 text-white ">Explore the world with ease and embark on your next adventure.</p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-[#f9b17a] px-3.5 py-2.5 text-md font-bold text-[#2d3250] shadow-sm hover:bg-[#767fb4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Start planning with AI</a>
         </div>
-        {/* Conditionally rendered welcome message (unchanged) */}
-      </main>
+      </div>
     </div>
   );
 };

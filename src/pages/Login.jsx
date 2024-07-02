@@ -16,7 +16,6 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-cover bg-no-repeat bg-center h-screen" style={{ backgroundImage: `url(/public/login.png)` }}>
       <div className="grid grid-cols-2">
         <div className="min-h-screen flex flex-col justify-center ml-40 px-10">
           <h2 className="text-4xl font-bold text-left text-white">Everyday is </h2>
@@ -65,7 +64,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
