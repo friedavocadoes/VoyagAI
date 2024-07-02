@@ -1,8 +1,10 @@
-# Don't panic!
+## React + Vite + TailWind
 
-All the files are in it's respective branch.
-
-> main will only be updated once a stage of development is completed.
+```
+npm i
+npm run dev
+```
 
 > [!NOTE]
-> Next stage completion date: 30th June (estimated)
+> Boiler plate code to work on frontend.
+> Tailwind is properly setup (check if the test module with h1 tag looks different)
