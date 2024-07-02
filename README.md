@@ -27,7 +27,8 @@ To run this project, you will need to add the following environment variables to
 > Acquire your Gemini API key from 
 ## Installation
 
-> [!NOTE] This project contains two working node directories.
+> [!NOTE]
+> This project contains two working node directories.
 
 - Run the following commands on project terminal:
 ```bash
