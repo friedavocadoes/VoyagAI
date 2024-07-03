@@ -27,7 +27,7 @@ app.post('/search', async (req, res) => {
         res.send(jtext);
     } catch {
         console.log('err');
-        res.send({error: "There was a problem parsing the response, please try again"});
+        res.send({vacation_spots: [{name: "Couldn't Parse Response", description: "Check your API key or try again"}]});
     }
 })
 
