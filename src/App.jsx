@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import Login from './pages/Login'; 
 import Signup from './pages/Signup'; 
 import Header from './components/Header';
+import Body from './components/Body';
 import Generator from './pages/Generator';
 import Results from './pages/Results';
 
@@ -11,12 +12,17 @@ function App() {
   return (
     <BrowserRouter>
       <Header>
+        <Body>
+          <Routes>
+            <Route path="/" element={<Homepage />} />  {/* Homepage route */}
+            <Route path="/login" element={<Login />} />  {/* Login page route */}
+            <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
+            
+          </Routes>
+        </Body>
         <Routes>
-          <Route path="/" element={<Homepage />} />  {/* Homepage route */}
-          <Route path="/login" element={<Login />} />  {/* Login page route */}
-          <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
-          <Route path="/generator" element={<Generator />} /> {/* The Form Page */}
-          <Route path="/results" element={<Results />} />
+          <Route path="/generator" element={<Generator />} />  {/* Generator page route */}
+          <Route path="/results" element={<Results />} />  {/* Results page route */}
         </Routes>
       </Header>
     </BrowserRouter>
