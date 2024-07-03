@@ -12,10 +12,17 @@ function App() {
   return (
     <BrowserRouter>
       <Header>
+        <Body>
+          <Routes>
+            <Route path="/" element={<Homepage />} />  {/* Homepage route */}
+            <Route path="/login" element={<Login />} />  {/* Login page route */}
+            <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
+            
+          </Routes>
+        </Body>
         <Routes>
-          <Route path="/" element={<Homepage />} />  {/* Homepage route */}
-          <Route path="/login" element={<Login />} />  {/* Login page route */}
-          <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
+          <Route path="/generator" element={<Generator />} />  {/* Generator page route */}
+          <Route path="/results" element={<Results />} />  {/* Results page route */}
         </Routes>
       </Header>
     </BrowserRouter>
