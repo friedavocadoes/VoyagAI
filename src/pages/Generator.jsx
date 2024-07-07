@@ -12,11 +12,11 @@ const Generator = () => {
   };
 
   return (
-    <div className="relative min-h-screen grid bg-black">
+    <div className="relative min-h-screen grid">
       <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0">
 
         {/* the below line to see a demo logo */}
-        <div className="relative sm:w-1/2 xl:w-3/5 bg-blue-500 h-full hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden text-white bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(src/assets/download.jpeg)` }}>
+        <div className="relative sm:w-1/2 xl:w-3/5 bg-blue-500 h-full hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden text-white bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(public/voyagai.png)` }}>
           <div className="absolute bg-black opacity-25 inset-0 z-0"></div>
           <div className="w-full lg:max-w-2xl md:max-w-md z-10 items-center text-center">
             <div className="font-bold leading-tight mb-6 mx-auto w-full content-center items-center text-slate-500	">
