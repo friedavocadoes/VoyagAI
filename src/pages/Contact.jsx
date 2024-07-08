@@ -1,27 +1,62 @@
-// AboutUs.jsx
 import React from 'react';
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div className="relative px-6 pt-14 flex items-center justify-center min-h-screen">
-      <div className="text-center max-w-[700px]"> {/* Limit text container width */}
+    <div className="relative px-6 pt-14 flex items-center justify-center min-h-screen mt-20 mb-20">
+      <div className="text-center max-w-[700px]"> 
         <h1 className="text-4xl font-bold tracking-tight text-[#767fb4] sm:text-6xl">
-          About VoyageAI
+          Contact Us
         </h1>
-        <p className="mt-6 text-lg leading-8 text-white">
-          Your Personalized Travel Guide, Powered by AI
+        <p className="mt-6 text-lg leading-8 text-slate-300 font-light">
+          Get in touch and let's chat about your travel dreams!
         </p>
+
         <div className="mt-10 space-y-6 prose">
-          <p className="text-base leading-loose text-left"> {/* Left-align text */}
-            <span className="text-[#f9b17a] font-bold">Born in [Year],</span> VoyageAI is the brainchild of passionate travelers and tech wizards. We saw a gap in the travel planning landscape - a need for a tool that could spark the thrill of discovery while leveraging the power of AI.
+          <p className="text-base leading-loose text-left font-mono text-stone-900">
+            Have questions about VoyageAI or want to discuss your travel plans with our team? We're here to help! Feel free to reach out using the methods below:
           </p>
-          <p className="text-base leading-loose text-left">
-            <span className="text-[#f9b17a] font-bold">Our mission:</span> to be your travel companion, empowering you to explore the world with confidence. We craft personalized itineraries tailored to your unique interests and preferences. Whether you're a history buff, an adrenaline junkie, or a culinary adventurer, VoyageAI helps you design the perfect trip, ensuring a stress-free and unforgettable experience.
-          </p>
+        </div>
+
+        <div className="mt-10 space-y-4">
+          <h2 className="text-2xl font-bold text-[#1a1a1a]">Contact Information</h2>
+          <ul className="list-none space-y-2">
+            <li>
+              <span className="font-medium text-[#f9b17a]">Email:</span> info@voyage.ai
+            </li>
+            <li>
+              <span className="font-medium text-[#f9b17a]">Phone:</span> +91 9207757005
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-10 space-y-4">
+          <h2 className="text-2xl font-bold text-[#1a1a1a]">Send Us a Message</h2>
+          <form className="grid grid-cols-1 gap-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#767fb4]"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#767fb4]"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              className="px-4 py-2 rounded-md border border-gray-300 h-24 focus:outline-none focus:ring-1 focus:ring-[#767fb4]"
+              required
+            />
+            <button type="submit" className="bg-[#767fb4] text-white font-medium py-2 px-4 rounded-md hover:bg-[#3f5c99]">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;
