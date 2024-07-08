@@ -28,10 +28,10 @@ const Layout = ({ children }) => {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-md font-semibold leading-6 text-white">
+          {/* <Link to="/" className="text-md font-semibold leading-6 text-white">
             Explore
-          </Link>
-          <Link to="/#" className="text-md font-semibold leading-6 text-white">
+          </Link> */}
+          <Link to="/about" className="text-md font-semibold leading-6 text-white">
             About
           </Link>
           <Link to="/#" className="text-md font-semibold leading-6 text-white">
