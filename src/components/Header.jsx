@@ -1,16 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div>
-      <header className="fixed inset-x-0 top-0 z-50">
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition duration-100 ease-in-out ${
+          isScrolled ? 'bg-gray-900 bg-opacity-0 backdrop-filter backdrop-blur-md' : 'bg-transparent'
+        }`}
+      >
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <h1 className="text-3xl font-bold text-white">
@@ -28,20 +43,20 @@ const Layout = ({ children }) => {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-md font-semibold leading-6 text-white">
-            Explore
-          </Link>
-          <Link to="/#" className="text-md font-semibold leading-6 text-white">
-            About
-          </Link>
-          <Link to="/#" className="text-md font-semibold leading-6 text-white">
-            Contact
-          </Link>
+            {/* <Link to="/" className="text-md font-semibold leading-6 text-white">
+              Explore
+            </Link> */}
+            <Link to="/about" className="text-md font-semibold leading-6 text-white">
+              About
+            </Link>
+            <Link to="/contact" className="text-md font-semibold leading-6 text-white">
+              Contact Us
+            </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link to="/login" className="text-md font-semibold leading-6 text-white">
               Login
-            </Link>          
+            </Link>
           </div>
         </nav>
         {menuOpen && (
@@ -64,18 +79,18 @@ const Layout = ({ children }) => {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6 px-4">
-                    <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
+                    {/* <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
                       Explore
-                    </Link>
-                    <Link to="/#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
+                    </Link> */}
+                    <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
                       About
                     </Link>
-                    <Link to="/#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
-                      Contact
+                    <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f9b17a] hover:bg-[#767fb4]">
+                      Contact Us
                     </Link>
                   </div>
                   <div className="py-6 px-4">
-                    <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-white hover:bg-[#767fb4]">
+                    <Link to="/login" className="-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-white hover:bg-[#767fb4]">
                      Login
                     </Link> 
                   </div>
