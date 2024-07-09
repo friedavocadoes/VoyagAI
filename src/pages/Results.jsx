@@ -34,19 +34,19 @@ const Results = () => {
             {results.map((result, index) => (
               <div
                 key={index}
-                className={`bg-slate-400 rounded-lg shadow-md overflow-hidden m-3 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
+                className={`bg-slate-500 rounded-lg shadow-md overflow-hidden m-3 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
               >
                 <a href={result.link} target="_blank">
                   {/* <img className="w-full h-48 object-cover" src={result.pict} alt={result.name} /> */}
                   <div className="p-4">
                     <h5 className="text-xl font-bold mb-3 text-slate-900">{result.name}</h5>
                     <p className="text-gray-700 text-sm mb-2">
-                      <span className="text-slate-700 font-bold">Descriptions: </span>
+                      <span className="text-slate-800 font-bold">Descriptions: </span>
                       {result.description}
                     </p>
                     {result.travel ? (
                       <p className="text-gray-700 text-sm mb-2">
-                        <span className="text-slate-700 font-bold">Travel: </span>
+                        <span className="text-slate-800 font-bold">Travel: </span>
                         {result.travel}
                       </p>
                     ) : (
@@ -54,7 +54,7 @@ const Results = () => {
                     )}
                     {result.stay ? (
                       <p className="text-gray-700 text-sm mb-2">
-                        <span className="text-slate-700 font-bold">Stay Options: </span>
+                        <span className="text-slate-800 font-bold">Stay Options: </span>
                         {result.stay}
                       </p>
                     ) : (
@@ -62,7 +62,7 @@ const Results = () => {
                     )}
                     {result.budget ? (
                       <p className="text-gray-700 text-sm mb-2">
-                        <span className="text-slate-700 font-bold">Budget (est.): </span>
+                        <span className="text-slate-800 font-bold">Budget (est.): </span>
                         {result.budget}
                       </p>
                     ) : (
