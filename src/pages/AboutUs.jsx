@@ -30,10 +30,10 @@ const AboutUs = () => {
             <li>
               <span className="font-medium">Archit Garg</span> - CSE Student
             </li>
-            <li>
+            <li className="text-red-700">
               <span className="font-medium">Yashika Bhandari</span> - CSE Student
             </li>
-            <li>
+            <li className="text-red-700">
               <span className="font-medium">Kalpit Chaudary</span> - CSE Student
             </li>
           </ul>
