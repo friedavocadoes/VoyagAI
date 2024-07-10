@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () => {
   return (
     <div className="relative px-6 pt-14 flex items-center justify-center min-h-screen mt-20">
-      <div className="text-center max-w-[700px]"> {/* Limit text container width */}
+      <div className="text-center max-w-[700px]"> 
         <h1 className="text-4xl font-bold tracking-tight text-[#767fb4] sm:text-6xl">
           About VoyageAI
         </h1>
