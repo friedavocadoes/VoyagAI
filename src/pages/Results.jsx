@@ -34,7 +34,7 @@ const Results = () => {
             {results.map((result, index) => (
               <div
                 key={index}
-                className={`bg-slate-500 rounded-lg shadow-md overflow-hidden m-3 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
+                className={`bg-slate-400 rounded-lg shadow-md overflow-hidden m-3 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:bg-slate-300`}
               >
                 <a href={result.link} target="_blank">
                   {/* <img className="w-full h-48 object-cover" src={result.pict} alt={result.name} /> */}
