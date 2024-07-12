@@ -53,13 +53,11 @@ const Login = () => {
                 />
               </div>
               {error && 
-                <div class="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
-                  <p class="text-sm">{error}</p>
+                <div className="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
+                  <p className="text-sm">{error}</p>
                 </div>
               }
-
-
-              
+            
               <button
                 type="submit"
                 className="px-4 py-2 text-white font-bold shadow hover:bg-green-600 rounded-md bg-green-400"

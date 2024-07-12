@@ -28,10 +28,11 @@ router.post('/signup', async (req, res) => {
     });
 
     await user.save();
-
+    console.log(user.name);
     const payload = {
       user: {
         id: user.id,
+        name: user.name,
       },
     };
 
@@ -61,9 +62,12 @@ router.post('/signin', async (req, res) => {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
+    console.log(user.name);
+
     const payload = {
       user: {
         id: user.id,
+        name: user.name,
       },
     };
 

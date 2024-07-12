@@ -10,6 +10,8 @@ import Generator from './pages/Generator';
 import Results from './pages/Results';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/Contact';
+import PrivateRoute from './components/PrivateRoute';
+
 
 function App() {
   return (
@@ -25,7 +27,14 @@ function App() {
           </Routes>
         </Body>
         <Routes>
-          <Route path="/generator" element={<Generator />} />  {/* Generator page route */}
+          <Route
+          path="/generator"
+          element={
+            <PrivateRoute>
+              <Generator />
+            </PrivateRoute>
+          }
+          />  {/* Generator page route */}
           <Route path="/results" element={<Results />} />  {/* Results page route */}
         </Routes>
         <Footer />

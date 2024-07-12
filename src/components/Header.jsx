@@ -1,15 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getUserFromToken } from '../utils/auth';
+
+
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [user, pullUser] = useState('');
+
+  
+  
+  // console.log(user);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const handleScroll = () => {
+    pullUser(getUserFromToken());
     setIsScrolled(window.scrollY > 0);
   };
 
@@ -54,6 +63,9 @@ const Layout = ({ children }) => {
             </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+
+              {user && <div className="text-md font-semibold leading-6 text-white">{user}</div>}
+
             <Link to="/login" className="text-md font-semibold leading-6 text-white">
               Login
             </Link>

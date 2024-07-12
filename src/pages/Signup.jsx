@@ -16,7 +16,6 @@ const Signup = () => {
     try {
       const res = await axios.post('http://localhost:5000/api/auth/signup', { name, email, password });
       console.log(res.data.token);
-      // Save the token to localStorage or state
       localStorage.setItem('token', res.data.token);
       window.location.href = '/login';
     } catch (error) {
@@ -65,8 +64,8 @@ const Signup = () => {
                   />
                 </div>
                 {error && 
-                  <div class="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
-                    <p class="text-sm">{error}</p>
+                  <div className="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
+                    <p className="text-sm">{error}</p>
                   </div>
                 }
               <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow  hover:bg-green-600 rounded-md bg-green-400">
