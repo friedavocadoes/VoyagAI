@@ -60,9 +60,12 @@ const Signup = () => {
                     className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
-              <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow  hover:bg-[#2d3250] rounded-md bg-[#f9b17a]">
-                Sign Up
-              </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 text-white font-bold shadow rounded-md bg-[#f9b17a] hover:bg-[#2d3250] hover:text-[#fff] transition duration-300 ease-in-out hover:scale-110"
+                >
+                  Sign up
+                </button>
             </form>
             <p className="text-white text-center mt-4">
               Already have an account?{' '}

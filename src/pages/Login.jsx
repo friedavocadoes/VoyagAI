@@ -47,7 +47,7 @@ const Login = () => {
               </div>
               <button
                 type="submit"
-                className="px-4 py-2 text-white font-bold shadow hover:bg-[#2d3250] rounded-md bg-[#f9b17a]"
+                className="px-4 py-2 text-white font-bold shadow rounded-md bg-[#f9b17a] hover:bg-[#2d3250] hover:text-[#fff] transition duration-300 ease-in-out hover:scale-110"
               >
                 Login
               </button>

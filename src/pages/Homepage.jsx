@@ -5,10 +5,15 @@ const Homepage = () => {
   return (
     <div className="relative px-6 pt-[250px] flex items-center justify-center min-h-screen">
       <div className="text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-[#767fb4] sm:text-8xl">Your <span class="text-[#f9b17a] ">SMART </span> Travel Planner</h1>
-      <p class="mt-6 text-xl leading-8 text-white ">Explore the world with ease and embark on your next adventure.</p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/generator" class="rounded-md bg-[#f9b17a] px-3.5 py-2.5 text-lg font-bold text-[#2d3250] shadow-sm hover:bg-[#767fb4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Start planning with AI</a>
+      <h1 className="text-4xl font-bold tracking-tight text-[#767fb4] sm:text-8xl">Your <span class="text-[#f9b17a] ">SMART </span> Travel Planner</h1>
+      <p className="mt-6 text-xl leading-8 text-white ">Explore the world with ease and embark on your next adventure.</p>
+      <div className="mt-10 flex items-center justify-center gap-x-6">
+        <Link
+          to="/generator"
+          className="rounded-md bg-[#f9b17a] px-3.5 py-2.5 text-lg font-bold text-[#2d3250] shadow-sm hover:scale-110 transition duration-300 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          Start planning with AI
+        </Link>
       </div>
       <img
         alt="VoyagAI"
@@ -29,18 +34,17 @@ const Homepage = () => {
         <section className="w-full flex flex-col space-y-4 md:w-1/2 md:ml-auto">  {/* Adjust width and margin on medium screens */}
           <h2 className="text-4xl font-bold text-white">Adventure Doesn't Have to Cost a Fortune</h2>
           <p className="text-gray-400 text-2xl">
-            Unwind and let go of travel worries. Our AI takes care of the planning,
-            crafting a personalized itinerary that caters to your interests and
-            preferences. Simply relax, explore, and enjoy the journey.
+          Dream destinations don't have to be expensive. Our AI travel planner 
+          optimizes your budget, finding hidden gems and cost-effective options
+          that let you experience more for less. Explore the world without burning a hole in your pocket.
           </p>
         </section>
         <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
           <h2 className="text-4xl font-bold text-white">Travel with Ease</h2>
           <p className="text-gray-400 text-2xl">
-            VoyageAI can help you design your dream vacation! Just tell them what
-            places you want to see and where you'd like to stay, and their
-            super-smart system will create a personalized itinerary that's perfect
-            for you.
+          Unwind and let go of travel worries. Our AI takes care of the planning, 
+          crafting a personalized itinerary that caters to your interests and 
+          preferences. Simply relax, explore, and enjoy the journey.
           </p>
         </section>
       </div>

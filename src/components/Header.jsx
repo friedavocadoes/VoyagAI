@@ -46,15 +46,24 @@ const Layout = ({ children }) => {
             {/* <Link to="/" className="text-md font-semibold leading-6 text-white">
               Explore
             </Link> */}
-            <Link to="/about" className="text-md font-semibold leading-6 text-white">
+            <Link
+              to="/about"
+              className="text-md font-semibold leading-6 text-white hover: decoration-white hover:text-gray-200 hover:scale-125 transition duration-300 ease-in-out"
+            >
               About
             </Link>
-            <Link to="/contact" className="text-md font-semibold leading-6 text-white">
-              Contact Us
+            <Link
+              to="/contact"
+              className="text-md font-semibold leading-6 text-white hover: decoration-white hover:text-gray-200 hover:scale-125 transition duration-300 ease-in-out"
+            >
+              Contact
             </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/login" className="text-md font-semibold leading-6 text-white">
+            <Link
+              to="/login"
+              className="text-md font-semibold leading-6 text-white hover: decoration-white hover:text-gray-200 hover:scale-125 transition duration-300 ease-in-out"
+            >
               Login
             </Link>
           </div>
