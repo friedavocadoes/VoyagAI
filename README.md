@@ -1,6 +1,6 @@
-# VoyagAI - API Functional Release (Test)
+# VoyagAI - Pre-Alpha
 
-#### This is a Demo to play with the behaviors on prompt pull.
+#### Currently just goes with a flow, everything works as expected (hopefully).
 
 #### Click on the `Start planning with AI` after installation to play with it.
 
@@ -35,8 +35,8 @@ npm start
 
 - Go to http://localhost:5173 (default React port).
 - Click on `Start planning with AI`
-- Input your details on the form.
-- Submit and enjoy.
+- Signup and/or Login.
+- Play with the form and watch the results!
 
 ## Authors💖
 
