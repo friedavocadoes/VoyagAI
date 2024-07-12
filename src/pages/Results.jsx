@@ -30,6 +30,8 @@ const Results = () => {
     <>
       <div className="mt-[115px] mx-20">
         {results ? (
+          <>
+          <h1>Your trip to:</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5 m-5">
             {results.map((result, index) => (
               <div
@@ -41,7 +43,7 @@ const Results = () => {
                   <div className="p-4">
                     <h5 className="text-xl font-bold mb-3 text-slate-900">{result.name}</h5>
                     <p className="text-gray-700 text-sm mb-2">
-                      <span className="text-slate-800 font-bold">Descriptions: </span>
+                      <span className="text-slate-800 font-bold">Description: </span>
                       {result.description}
                     </p>
                     {result.travel ? (
@@ -73,6 +75,7 @@ const Results = () => {
               </div>
             ))}
           </div>
+          </>
         ) : (
           <div className="absolute right-1/2 bottom-1/2 transform translate-x-1/2 translate-y-1/2">
             <div className="p-4 bg-gradient-to-tr animate-spin from-green-500 to-blue-500 via-purple-500 rounded-full">
