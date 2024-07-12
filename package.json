@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "api": "nodemon api/server.js",
+    "api": "nodemon backend/index.js",
     "dev": "vite",
     "start": "concurrently \"npm run dev\" \"npm run api\"",
     "build": "vite build",

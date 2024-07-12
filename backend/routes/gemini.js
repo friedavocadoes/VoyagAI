@@ -1,20 +1,9 @@
-const express = require('express');
-const run = require("./pre.js");
-const cors = require("cors");
-const bodyParser = require('body-parser');
+import express from 'express';
+import run from '../prompt/gen.mjs';
+const router = express.Router();
 
-const app = express();
-app.use(express.json());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.set('view engine', 'ejs');
 
-const corsOptions = {
-    origin: "http://localhost:5173",
-};
-app.use(cors(corsOptions));
-
-app.post('/search', async (req, res) => {
+router.post('/search', async (req, res) => {
     try {
         const loc = req.body.loc;
         const mood = req.body.mood;
@@ -35,6 +24,4 @@ app.post('/search', async (req, res) => {
     }
 })
 
-app.listen(3000, () => {
-    console.log(`http://localhost:3000`);
-});
+export default router;

@@ -1,8 +1,6 @@
-const { GoogleGenerativeAI } = require("@google/generative-ai");
-const prompt = require('prompt-sync')();
+import { GoogleGenerativeAI } from "@google/generative-ai";
 const api = process.env.GEM_API_KEY;
 
-const fs = require('fs');
 const genAI = new GoogleGenerativeAI(api);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
@@ -16,10 +14,14 @@ async function run(mood, budget, loc) {
     There shud be no other text or formatting other than the json output, especially the json formatter text ('''json''') shouldnt be there. the output should be plain string`;
 
     const result = await model.generateContent(prompt);
+    
+    // remove comment to test output
+    // console.log(result);
+
     const response = await result.response;
     const text = response.text();
-    
+
     return text;
 }
 
-module.exports = run;
+export default run;
