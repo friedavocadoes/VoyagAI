@@ -28,14 +28,22 @@ function App() {
         </Body>
         <Routes>
           <Route
-          path="/generator"
-          element={
-            <PrivateRoute>
-              <Generator />
-            </PrivateRoute>
-          }
+            path="/generator"
+            element={
+              <PrivateRoute>
+                <Generator />
+              </PrivateRoute>
+            }
           />  {/* Generator page route */}
-          <Route path="/results" element={<Results />} />  {/* Results page route */}
+
+          <Route
+            path="/results"
+            element={
+            <PrivateRoute>
+              <Results />
+            </PrivateRoute>
+            }
+          />  {/* Results page route */}
         </Routes>
         <Footer />
       </Header>
