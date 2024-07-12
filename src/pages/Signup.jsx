@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 
 const Signup = () => {
@@ -8,16 +10,19 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+  const handleSubmit = async (event) => {
+    event.preventDefault(); 
 
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Confirm Password:', confirmPassword);
-
+    try {
+      const res = await axios.post('http://localhost:5000/api/auth/signup', { name, email, password });
+      console.log(res.data.token);
+      // Save the token to localStorage or state
+      localStorage.setItem('token', res.data.token);
+    } catch (error) {
+      console.error(error.response.data.message);
+    }
     
-    window.location.href = '/login'; // Temporary redirection for demonstration
+    window.location.href = '/login';
   };
 
   return (

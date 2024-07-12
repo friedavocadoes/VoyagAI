@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+  const handleSubmit = async (event) => {
+    event.preventDefault(); 
 
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    window.location.href = '/'; // Temporary redirection for demonstration
+    try {
+      const res = await axios.post('http://localhost:5000/api/auth/signin', { email, password });
+      console.log(res.data.token);
+      localStorage.setItem('token', res.data.token);
+      window.location.href = '/generator';
+    } catch (error) {
+      console.error(error.response.data.message);
+      window.location.href = '/';
+    }
   };
 
   return (
