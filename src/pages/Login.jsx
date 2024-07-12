@@ -23,14 +23,14 @@ const Login = () => {
   };
 
   return (
-      <div className="grid grid-cols-2">
-        <div className="min-h-screen flex flex-col justify-center ml-40 px-10">
-          <h2 className="text-4xl font-bold text-left text-white">Everyday is </h2>
-          <h1 className="text-9xl text-left mb-10 text-orange-500">Holiday </h1>
-        </div>
-        <div className="min-h-screen flex flex-col justify-center items-center px-10">
-          <div className="bg-blue-200/40 rounded-xl text-center px-20 py-10 items-center backdrop-blur-[19px]">
-            <h1 className="text-4xl font-bold text-center mb-10 text-white">VoyageAI</h1>
+      <div className="min-h-screen flex flex-col justify-center items-center mt-7">
+          <div className="bg-[#606797] rounded text-center px-20 py-10 items-center bg-opacity-30 backdrop-blur-[15px]">
+            <img
+              alt="VoyagAI"
+              src="/beigelogo.png"
+              className="w-20 h-20 object-cover mx-auto"
+            />
+            <h1 className="text-4xl font-bold text-center mb-10 text-[#f9b17a]">VoyageAI</h1>
             <form onSubmit={handleSubmit} className="flex flex-col space-y-4">  
               <div className="flex flex-col">
                 <input
@@ -57,26 +57,25 @@ const Login = () => {
                   <p className="text-sm">{error}</p>
                 </div>
               }
-            
               <button
                 type="submit"
-                className="px-4 py-2 text-white font-bold shadow hover:bg-green-600 rounded-md bg-green-400"
+                className="px-4 py-2 text-white font-bold shadow hover:bg-[#2d3250] rounded-md bg-[#f9b17a]"
               >
                 Login
               </button>
             </form>
-            <a href="#" className="text-gray-600 hover:text-gray-800 mt-4 text-center">
+            <a href="#" className="text-white hover:text-gray-800 text-left mt-20 text-xs">
               Forgot password?
             </a>
-            <p className="text-gray-600 text-center mt-4">
+            <p className="text-white text-center mt-4">
               Don't have an account?{' '}
-              <Link to="/signup" className="text-blue-500 hover:text-blue-700">
+              <Link to="/signup" className="text-[#f9b17a] hover:text-white">
                 Signup
               </Link>
             </p>
           </div>
         </div>
-      </div>
+
   );
 };
 

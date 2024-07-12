@@ -9,21 +9,27 @@ const Layout = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [user, pullUser] = useState('');
 
-  
-  
-  // console.log(user);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleScroll = () => {
+  const showUser = () => {
     pullUser(getUserFromToken());
+  }
+
+  const handleScroll = () => {
     setIsScrolled(window.scrollY > 0);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    window.location.reload(false);
+
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', showUser);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -64,11 +70,11 @@ const Layout = ({ children }) => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
 
-              {user && <div className="text-md font-semibold leading-6 text-white">{user}</div>}
-
-            <Link to="/login" className="text-md font-semibold leading-6 text-white">
+              {user ? <button onClick={handleLogout} className="text-md font-semibold leading-6 text-white">{user}(Logout)</button> : <Link to="/login" className="text-md font-semibold leading-6 text-white">
               Login
-            </Link>
+            </Link>}
+
+            
           </div>
         </nav>
         {menuOpen && (

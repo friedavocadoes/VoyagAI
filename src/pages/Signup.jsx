@@ -24,26 +24,17 @@ const Signup = () => {
   };
 
   return (
-      <div className="grid grid-cols-2">
-        <div className="min-h-screen flex flex-col justify-center ml-40 px-10">
-          <h2 className="text-4xl font-bold text-left text-white">Everyday is </h2>
-          <h1 className="text-9xl text-left mb-10 text-orange-500">Holiday </h1>
-        </div>
-        <div className="min-h-screen flex flex-col justify-center items-center px-10">
-          <div className="bg-blue-200/40 rounded-xl text-center px-20 py-10 items-center backdrop-blur-[19px]">
-            <h1 className="text-4xl font-bold text-center mb-10 text-white">VoyageAI</h1>
-              <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-                <div className="flex flex-col">
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                  />
-                </div>
-                <div className="flex flex-col">
+
+      <div className="min-h-screen flex flex-col justify-center items-center mt-6">
+    <div className="bg-[#606797] rounded text-center px-20 py-10 items-center bg-opacity-30 backdrop-blur-[15px]">
+      <img
+        alt="VoyagAI"
+        src="/beigelogo.png"
+        className="w-20 h-20 object-cover mx-auto"
+      />
+      <h1 className="text-4xl font-bold text-center mb-10 text-[#f9b17a]">VoyageAI</h1>
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">  
+      <div className="flex flex-col">
                   <input
                     type="email"
                     id="email"
@@ -51,6 +42,16 @@ const Signup = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  />
+                </div>
+                <div className="flex flex-col">
+                 <input
+                   type="text"
+                   id="name"
+                   placeholder="Name"
+                   value={name}
+                   onChange={(e) => setName(e.target.value)}
+                   className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -63,24 +64,24 @@ const Signup = () => {
                     className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
+                
                 {error && 
                   <div className="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
                     <p className="text-sm">{error}</p>
                   </div>
                 }
-              <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow  hover:bg-green-600 rounded-md bg-green-400">
+              <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow  hover:bg-[#2d3250] rounded-md bg-[#f9b17a]">
                 Sign Up
               </button>
             </form>
-            <p className="text-gray-600 text-center mt-4">
+            <p className="text-white text-center mt-4">
               Already have an account?{' '}
-              <Link to="/login" className="text-blue-500 hover:text-blue-700">
+              <Link to="/login" className="text-[#f9b17a] hover:text-white">
                 Login
               </Link>
             </p>
           </div>
-        </div>
-      </div>
+    </div>
   );
 };
 
