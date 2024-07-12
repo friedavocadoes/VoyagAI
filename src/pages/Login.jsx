@@ -6,6 +6,8 @@ import axios from 'axios';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
 
   const handleSubmit = async (event) => {
     event.preventDefault(); 
@@ -16,8 +18,7 @@ const Login = () => {
       localStorage.setItem('token', res.data.token);
       window.location.href = '/generator';
     } catch (error) {
-      console.error(error.response.data.message);
-      window.location.href = '/';
+      setError(error.response.data.message);
     }
   };
 
@@ -51,6 +52,14 @@ const Login = () => {
                   className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
               </div>
+              {error && 
+                <div class="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
+                  <p class="text-sm">{error}</p>
+                </div>
+              }
+
+
+              
               <button
                 type="submit"
                 className="px-4 py-2 text-white font-bold shadow hover:bg-green-600 rounded-md bg-green-400"
