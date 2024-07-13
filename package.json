@@ -12,8 +12,6 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-leaflet/core": "^2.1.0",
     "axios": "^1.7.2",
     "concurrently": "^8.2.2",
