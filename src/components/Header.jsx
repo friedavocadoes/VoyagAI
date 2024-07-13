@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
                   onClick={() => setOpen(!open)}
                   className="flex flex-row items-center w-full px-4 py-2 mt-2 text-md font-semibold text-left text-white bg-transparent rounded-lg hover:text-gray-400 focus:outline-none focus:shadow-outline transition duration-100 ease-in-out"
                 >
-                  <span>{user}</span>
+                  <span>Hi, {user}</span>
                   <svg
                     className={`inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform ${open ? 'rotate-180' : 'rotate-0'}`}
                     fill="currentColor"
