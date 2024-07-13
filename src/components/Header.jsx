@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
       >
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <h1 className="text-3xl font-bold hover:text-slate-500 hover:scale-105 transition duration-200 ease-in-out text-white">
+            <h1 className="text-3xl font-bold hover:text-[#DFA175] hover:scale-105 transition duration-200 ease-in-out text-white">
               <Link to="/">
                 VoyageAI
               </Link>
@@ -75,10 +75,10 @@ const Layout = ({ children }) => {
             {/* <Link to="/" className="text-md font-semibold leading-6 text-white">
               Explore
             </Link> */}
-            <Link to="/about" className="text-md font-semibold hover:text-slate-300 hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
+            <Link to="/about" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
               About
             </Link>
-            <Link to="/contact" className="text-md font-semibold hover:text-slate-300 hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
+            <Link to="/contact" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
               Contact Us
             </Link>
           </div>

@@ -6,8 +6,10 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
+
 let moodDescriptions = ["Very Unhappy", "Unhappy", "Neutral", "Happy", "Very Happy"];
 moodDescriptions[-1] = "";
+const accentColor = "#DFA175";
 
 const Generator = () => {
   const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm();
@@ -53,7 +55,7 @@ const Generator = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative">
-      <div className="w-full max-w-2xl bg-gray-800 p-10 rounded-lg shadow-lg relative z-2 text-center mt-[7em] mb-20">
+      <div className="w-full max-w-2xl bg-gray-800 bg-opacity-40 backdrop-blur-[20px] p-10 rounded-lg shadow-2xl relative z-2 text-center mt-[7em] mb-20">
         <h1 className="text-4xl font-bold text-white mb-8">Plan Your Dream Vacation</h1>
         <p className="text-gray-300 mb-8">With AI, discover the perfect getaway based on your mood, budget, and starting location.</p>
 
@@ -106,10 +108,13 @@ const Generator = () => {
               defaultValue="-1"
               {...register('moodSlider')}
               onChange={(e) => setValue('mood', moodDescriptions[e.target.value])}
-              className="w-full accent-indigo-600"
+              className="w-full accent-[#DFA175] range-lg h-3 bg-slate-200"
             />
             {errors.mood && <p className="text-red-500 text-sm mt-2">{errors.mood.message}</p>}
           </div>
+
+          
+
           <div className="flex flex-col">
             <label htmlFor="budget" className="text-sm font-medium text-gray-300 mb-2">Budget (INR)</label>
             <input
@@ -149,7 +154,7 @@ const Generator = () => {
                     ...props.style,
                     height: '20px',
                     width: '20px',
-                    backgroundColor: '#4f46e5',
+                    backgroundColor: '#DFA175',
                     borderRadius: '50%',
                     border: '2px solid #1a202c',
                   }}
@@ -191,7 +196,7 @@ const Generator = () => {
               <button
                 type="button"
                 onClick={openMapPopup}
-                className="ml-2 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="ml-2 bg-[#DFA175] text-white px-4 py-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 Show Map
               </button>
@@ -199,7 +204,7 @@ const Generator = () => {
             {errors.location && <p className="text-red-500 text-sm mt-2">{errors.location.message}</p>}
           </div>
           
-          <button type="submit" className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <button type="submit" className="w-full bg-[#DFA175] text-white py-3 rounded-lg hover:bg-[#B6B6BF] focus:outline-none focus:ring-2 focus:ring-indigo-500">
             Generate Plan
           </button>
         </form>
