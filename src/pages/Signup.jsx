@@ -70,7 +70,7 @@ const Signup = () => {
                     <p className="text-sm">{error}</p>
                   </div>
                 }
-              <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow  hover:bg-[#2d3250] rounded-md bg-[#f9b17a]">
+              <button type="submit" className="px-4 py-2 text-white font-bold rounded shadow hover:scale-105 transition duration-300 ease-in-out hover:bg-[#2d3250] rounded-md bg-[#f9b17a]">
                 Sign Up
               </button>
             </form>
