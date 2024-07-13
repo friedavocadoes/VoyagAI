@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "api": "nodemon backend/index.js",
-    "dev": "vite",
+    "dev": "vite --host",
     "start": "concurrently \"npm run dev\" \"npm run api\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
