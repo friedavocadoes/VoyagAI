@@ -1,81 +1,204 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
 
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
 
-  const handleSubmit = async (event) => {
-    event.preventDefault(); 
+    console.log('Email:', email);
+    console.log('Password:', password);
 
-    try {
-      const res = await axios.post('http://localhost:5000/api/auth/signin', { email, password });
-      console.log(res.data.token);
-      localStorage.setItem('token', res.data.token);
-      window.location.href = '/generator';
-    } catch (error) {
-      setError(error.response.data.message);
-    }
+    window.location.href = '/'; // Temporary redirection for demonstration
+  };
+
+  const containerStyles = {
+    color: 'white',
+    minHeight: '100vh',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+  };
+
+  const leftSideStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    paddingLeft: '40px',
+    paddingRight: '10px',
+    animation: 'fadeInLeft 2s ease-in',
+  };
+
+  const rightSideStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingLeft: '10px',
+    paddingRight: '10px',
+    animation: 'fadeInRight 2s ease-in',
+  };
+
+  const cardStyles = {
+    backgroundColor: 'rgba(173, 216, 230, 0.25)', // Light blue with transparency
+    borderRadius: '10px',
+    textAlign: 'center',
+    padding: '20px 40px',
+    backdropFilter: 'blur(10px)',
+    animation: 'zoomIn 2s ease-in',
+  };
+
+  const titleStyles = {
+    fontSize: '2.25rem',
+    fontWeight: 'bold',
+    marginBottom: '40px',
+    color: 'white',
+  };
+
+  const formStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px',
+  };
+
+  const inputStyles = {
+    padding: '12px',
+    borderRadius: '8px',
+    border: '1px solid #ccc',
+    backgroundColor: '#333', // Dark background for inputs
+    color: '#fff', // White text for inputs
+    outline: 'none',
+  };
+
+  const inputFocusStyles = {
+    borderColor: '#ff6347', // Tomato color for focus border
+  };
+
+  const buttonStyles = {
+    padding: '12px',
+    borderRadius: '8px',
+    backgroundColor: '#32CD32', // Lime green color
+    color: '#fff',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease-in-out',
+  };
+
+  const buttonHoverStyles = {
+    backgroundColor: '#228B22', // Darker green color for hover
+  };
+
+  const linkStyles = {
+    color: '#b3b3b3', // Light grey color for text
+    textDecoration: 'none',
+  };
+
+  const linkHoverStyles = {
+    color: '#ffffff', // White color for hover text
+  };
+
+  const headingLeft = {
+    fontSize: '4rem',
+    fontWeight: 'bold',
+    textAlign: 'left',
+    color: 'white',
+    animation: 'fadeInLeft 2s ease-in',
+  };
+
+  const headingRight = {
+    fontSize: '9rem',
+    textAlign: 'left',
+    marginBottom: '40px',
+    color: '#FF4500', // Orange color
+    animation: 'fadeInRight 2s ease-in',
   };
 
   return (
-      <div className="min-h-screen flex flex-col justify-center items-center mt-7">
-          <div className="bg-[#606797] rounded text-center px-20 py-10 items-center bg-opacity-30 backdrop-blur-[15px]">
-            <img
-              alt="VoyagAI"
-              src="/beigelogo.png"
-              className="w-20 h-20 object-cover mx-auto"
-            />
-            <h1 className="text-4xl font-bold text-center mb-10 text-[#f9b17a]">VoyageAI</h1>
-            <form onSubmit={handleSubmit} className="flex flex-col space-y-4">  
-              <div className="flex flex-col">
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                />
-              </div>
-              <div className="flex flex-col">
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                />
-              </div>
-              {error && 
-                <div className="bg-red-100 border-t border-b border-red-500 text-red-700 px-0 py-1.5" role="alert">
-                  <p className="text-sm">{error}</p>
-                </div>
-              }
-              <button
-                type="submit"
-                className="px-4 py-2 text-white font-bold shadow hover:bg-[#2d3250] hover:scale-105 transition duration-200 ease-in-out rounded-md bg-[#f9b17a]"
-              >
-                Login
-              </button>
-            </form>
-            <a href="#" className="text-white hover:text-gray-800 text-left mt-20 text-xs">
-              Forgot password?
-            </a>
-            <p className="text-white text-center mt-4">
-              Don't have an account?{' '}
-              <Link to="/signup" className="text-[#f9b17a] hover:text-white">
-                Signup
-              </Link>
-            </p>
-          </div>
-        </div>
+    <div style={containerStyles}>
+      <style>{`
+        @keyframes fadeInLeft {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
 
+        @keyframes fadeInRight {
+          from {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        @keyframes zoomIn {
+          from {
+            transform: scale(0.5);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      `}</style>
+      <div style={leftSideStyles}>
+        <h2 style={headingLeft}>Everyday is</h2>
+        <h1 style={headingRight}>Holiday</h1>
+      </div>
+      <div style={rightSideStyles}>
+        <div style={cardStyles}>
+          <h1 style={titleStyles}>VoyageAI</h1>
+          <form onSubmit={handleSubmit} style={formStyles}>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={inputStyles}
+              onFocus={(e) => (e.target.style.borderColor = inputFocusStyles.borderColor)}
+              onBlur={(e) => (e.target.style.borderColor = '#ccc')}
+            />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              style={inputStyles}
+              onFocus={(e) => (e.target.style.borderColor = inputFocusStyles.borderColor)}
+              onBlur={(e) => (e.target.style.borderColor = '#ccc')}
+            />
+            <button
+              type="submit"
+              style={buttonStyles}
+              onMouseOver={(e) => (e.target.style.backgroundColor = buttonHoverStyles.backgroundColor)}
+              onMouseOut={(e) => (e.target.style.backgroundColor = buttonStyles.backgroundColor)}
+            >
+              Login
+            </button>
+          </form>
+          <a href="#" style={{ ...linkStyles, marginTop: '16px' }} onMouseOver={(e) => (e.target.style.color = linkHoverStyles.color)} onMouseOut={(e) => (e.target.style.color = linkStyles.color)}>
+            Forgot password?
+          </a>
+          <p style={{ ...linkStyles, marginTop: '16px' }}>
+            Don't have an account?{' '}
+            <Link to="/signup" style={linkStyles} onMouseOver={(e) => (e.target.style.color = linkHoverStyles.color)} onMouseOut={(e) => (e.target.style.color = linkStyles.color)}>
+              Signup
+            </Link>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
