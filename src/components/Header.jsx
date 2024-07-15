@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
       >
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <h1 className="text-3xl font-bold hover:text-[#DFA175] hover:scale-105 transition duration-200 ease-in-out text-white">
+            <h1 className="text-3xl font-bold hover:text-[#DFA175] hover:scale-105 transition duration-200 ease-in-out text-gray-200">
               <Link to="/">
                 VoyageAI
               </Link>
@@ -72,13 +72,13 @@ const Layout = ({ children }) => {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            <Link to="/explore" className="text-md font-semibold leading-6 text-white">
+          <Link to="/explore" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-gray-300">
               Explore
             </Link>
-            <Link to="/about" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
+            <Link to="/about" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-gray-300">
               About
             </Link>
-            <Link to="/contact" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
+            <Link to="/contact" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-gray-300">
               Contact Us
             </Link>
           </div>
@@ -87,7 +87,7 @@ const Layout = ({ children }) => {
               <div className="relative">
                 <button
                   onClick={() => setOpen(!open)}
-                  className="flex flex-row items-center w-full px-4 py-2 mt-2 text-md font-semibold text-left text-white bg-transparent rounded-lg hover:text-gray-400 focus:outline-none focus:shadow-outline transition duration-100 ease-in-out"
+                  className="flex flex-row items-center w-full px-4 py-2 mt-2 text-md font-semibold text-left text-gray-200 bg-transparent rounded-lg hover:text-gray-400 focus:outline-none focus:shadow-outline transition duration-100 ease-in-out"
                 >
                   <span>Hi, {user}</span>
                   <svg
@@ -132,7 +132,7 @@ const Layout = ({ children }) => {
               </div>
             : 
             
-              <Link to="/login" className="text-md hover:text-slate-300 hover:scale-110 transition duration-100 ease-in-out font-semibold leading-6 text-white">
+              <Link to="/login" className="text-md hover:text-slate-400 hover:scale-110 transition duration-100 ease-in-out font-semibold leading-6 text-gray-200">
                 Login
               </Link>
             }
