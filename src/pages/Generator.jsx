@@ -7,12 +7,18 @@ let moodDescriptions = ["Very Unhappy", "Unhappy", "Neutral", "Happy", "Very Hap
 moodDescriptions[-1] = "";
 const accentColor = "#DFA175";
 
-const Generator = () => {
-  const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm();
+const Generator = () => {  
+  // const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm();
+  const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm({
+    defaultValues: {
+      mood: moodDescriptions[-1], // Set default mood in form state
+    },
+  });
   const navigateTo = useNavigate();
 
   const [maxBudget, setMaxBudget] = useState(100000);
   const [showMaxBudgetInput, setShowMaxBudgetInput] = useState(false);
+  const [mood, setMood] = useState(moodDescriptions[-1]);
 
   
   const onSubmit = (data) => {
@@ -21,6 +27,11 @@ const Generator = () => {
 
   const moodValue = watch('moodSlider', -1);
   const budgetValues = watch('budgetSlider', [0, maxBudget]);
+
+  const handleMoodChange = (e) => {
+    setMood(e.target.value);
+    setValue('mood', e.target.value); // Update form state for validation
+  };
 
   const handleMaxBudgetChange = (e) => {
     const newMax = parseInt(e.target.value, 10) || 0;
@@ -35,15 +46,15 @@ const Generator = () => {
         <p className="text-gray-300 mb-8">With AI, discover the perfect getaway based on your mood, budget, and starting location.</p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+
           <div className="flex flex-col">
             <label htmlFor="mood" className="text-sm font-medium text-gray-300 mb-2">Mood</label>
             <input
               type="text"
               id="mood"
               {...register('mood')}
-              placeholder="How are you feeling today? (or use the slider below)"
+              placeholder="How are you feeling today?"
               className="border border-gray-600 bg-gray-700 text-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4"
-              value={moodDescriptions[moodValue]}
             />
             <input
               type="range"
@@ -58,7 +69,6 @@ const Generator = () => {
             />
             {errors.mood && <p className="text-red-500 text-sm mt-2">{errors.mood.message}</p>}
           </div>
-
           
 
           <div className="flex flex-col">
