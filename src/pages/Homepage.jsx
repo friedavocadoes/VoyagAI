@@ -1,21 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Homepage = () => {
   
-
-  const expandButton = () => {
-    
-    const goButton = document.getElementById('go');
-
-  };
-  
-
-  window.addEventListener('load', expandButton);
-  
-  useEffect(() => {
-    
-  }, [])
   return (
     <div className="relative px-6 pt-[250px] flex items-center justify-center min-h-screen">
       <div className="text-center">
