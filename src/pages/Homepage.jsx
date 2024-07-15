@@ -19,34 +19,33 @@ const Homepage = () => {
         className="object-cover mx-auto pt-15"
       />
       <h1 className="text-3xl font-bold tracking-tight text-[#767fb4] sm:text-6xl pb-20 pt-10">Your <span className="text-[#f9b17a] ">AI </span> Power Trip</h1>
-            <div className="flex flex-wrap justify-center items-center px-4 py-2 space-y-8 pb-10">
-        <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
-          <h2 className="text-4xl font-bold text-white">The Most Optimal</h2>
-          <p className="text-gray-400 text-2xl">
-            VoyageAI can help you design your dream vacation! Just tell them what
-            places you want to see and where you'd like to stay, and their
-            super-smart system will create a personalized itinerary that's perfect
-            for you.
-          </p>
-        </section>
-        <section className="w-full flex flex-col space-y-4 md:w-1/2 md:ml-auto">  {/* Adjust width and margin on medium screens */}
-          <h2 className="text-4xl font-bold text-white">Adventure Doesn't Have to Cost a Fortune</h2>
-          <p className="text-gray-400 text-2xl">
-            Unwind and let go of travel worries. Our AI takes care of the planning,
-            crafting a personalized itinerary that caters to your interests and
+      <div className="flex flex-wrap justify-center items-center px-4 py-2 space-y-8 pb-10">
+          <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
+            <h2 className="text-4xl font-bold text-white">The Most Optimal</h2>
+            <p className="text-gray-400 text-2xl">
+              VoyageAI can help you design your dream vacation! Just tell them what
+              places you want to see and where you'd like to stay, and their
+              super-smart system will create a personalized itinerary that's perfect
+              for you.
+            </p>
+          </section>
+          <section className="w-full flex flex-col space-y-4 md:w-1/2 md:ml-auto">  {/* Adjust width and margin on medium screens */}
+            <h2 className="text-4xl font-bold text-white">Adventure Doesn't Have to Cost a Fortune</h2>
+            <p className="text-gray-400 text-2xl">
+            Dream destinations don't have to be expensive. Our AI travel planner 
+            optimizes your budget, finding hidden gems and cost-effective options
+            that let you experience more for less. Explore the world without burning a hole in your pocket.
+            </p>
+          </section>
+          <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
+            <h2 className="text-4xl font-bold text-white">Travel with Ease</h2>
+            <p className="text-gray-400 text-2xl">
+            Unwind and let go of travel worries. Our AI takes care of the planning, 
+            crafting a personalized itinerary that caters to your interests and 
             preferences. Simply relax, explore, and enjoy the journey.
-          </p>
-        </section>
-        <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
-          <h2 className="text-4xl font-bold text-white">Travel with Ease</h2>
-          <p className="text-gray-400 text-2xl">
-            VoyageAI can help you design your dream vacation! Just tell them what
-            places you want to see and where you'd like to stay, and their
-            super-smart system will create a personalized itinerary that's perfect
-            for you.
-          </p>
-        </section>
-      </div>
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   );
