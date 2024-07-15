@@ -72,9 +72,9 @@ const Layout = ({ children }) => {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {/* <Link to="/" className="text-md font-semibold leading-6 text-white">
+            <Link to="/explore" className="text-md font-semibold leading-6 text-white">
               Explore
-            </Link> */}
+            </Link>
             <Link to="/about" className="text-md font-semibold hover:text-[#DFA175] hover:scale-110 transition duration-100 ease-in-out leading-6 text-white">
               About
             </Link>

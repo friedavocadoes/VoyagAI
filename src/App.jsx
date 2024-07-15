@@ -10,6 +10,7 @@ import Generator from './pages/Generator';
 import Results from './pages/Results';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/Contact';
+import Explore from './pages/Explore';
 import PrivateRoute from './components/PrivateRoute';
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />  {/* Signup page route */}
             <Route path="/about" element={<AboutUs />} />  {/* About Us page route */}
             <Route path="/contact" element={<ContactUs />} />  {/* Contact Us page route */}
+            <Route path="/explore" element={<Explore />} />  {/* Explore page route */}
           </Routes>
         </Body>
         <Routes>
