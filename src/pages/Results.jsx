@@ -34,10 +34,10 @@ const Results = () => {
 
   return (
     <>
-      <div className="mt-[115px] mx-20">
+      <div className="mt-[115px] mx-20 ">
         {isLoading ? (
           <>
-            <h2 className="text-2xl font-bold mb-5 animate-pulse text-slate-900 text-center m-5">
+            <h2 className="text-2xl font-bold mb-5 animate-pulse text-slate-800 text-center m-5">
               Parsing Results....
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5 m-5">
@@ -54,11 +54,11 @@ const Results = () => {
                 results.map((result, index) => (
                   <div
                     key={index}
-                    className={`bg-slate-400 rounded-md shadow-md overflow-hidden m-3 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-slate-300`}
+                    className={`bg-slate-300 bg-opacity-50 hover:bg-opacity-90 backdrop-blur-[12px] rounded-md shadow-md overflow-hidden m-2 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:bg-slate-100`}
                   >
                     <a href={result.link} target="_blank">
                       {/* <img className="w-full h-48 object-cover" src={result.pict} alt={result.name} /> */}
-                      <div className="p-4">
+                      <div className="p-5">
                         <h5 className="text-xl font-bold mb-3 text-slate-900">{result.name}</h5>
                         <p className="text-gray-700 text-sm mb-2">
                           <span className="text-slate-800 font-bold">Description: </span>
