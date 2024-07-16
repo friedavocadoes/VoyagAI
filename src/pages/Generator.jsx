@@ -8,10 +8,9 @@ moodDescriptions[-1] = "";
 const accentColor = "#DFA175";
 
 const Generator = () => {  
-  // const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm();
   const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm({
     defaultValues: {
-      mood: moodDescriptions[-1], // Set default mood in form state
+      mood: moodDescriptions[-1], 
     },
   });
   const navigateTo = useNavigate();
@@ -30,7 +29,7 @@ const Generator = () => {
 
   const handleMoodChange = (e) => {
     setMood(e.target.value);
-    setValue('mood', e.target.value); // Update form state for validation
+    setValue('mood', e.target.value); 
   };
 
   const handleMaxBudgetChange = (e) => {
@@ -56,17 +55,7 @@ const Generator = () => {
               placeholder="How are you feeling today?"
               className="border border-gray-600 bg-gray-700 text-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4"
             />
-            <input
-              type="range"
-              id="moodSlider"
-              min="0"
-              max="4"
-              step="1"
-              defaultValue="-1"
-              {...register('moodSlider')}
-              onChange={(e) => setValue('mood', moodDescriptions[e.target.value])}
-              className="w-full accent-[#DFA175] range-lg h-3 bg-slate-200"
-            />
+            
             {errors.mood && <p className="text-red-500 text-sm mt-2">{errors.mood.message}</p>}
           </div>
           

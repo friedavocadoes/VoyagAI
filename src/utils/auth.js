@@ -1,4 +1,3 @@
-// utils/auth.js
 import {jwtDecode} from 'jwt-decode';
 
 export const getUserFromToken = () => {
