@@ -103,21 +103,21 @@ const Layout = ({ children }) => {
                     {/* backdrop blur here does not work. why? */}
                     <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
                       <a
-                        href="#"
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        href="/generator"
+                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
-                        Profile
+                        Finder!
                       </a>
                       <a
                         href="/wishlist"
-                        className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
                       </a>
                       <a
                         href="#"
                         onClick={handleLogout}
-                        className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Logout
                       </a>
@@ -177,22 +177,22 @@ const Layout = ({ children }) => {
                   <div className="absolute z-100 right-0 w-full mt-1 origin-top-right rounded-md shadow-lg md:w-48">
                     {/* backdrop blur here does not work. why? */}
                     <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
-                      <a
-                        href="#"
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    <a
+                        href="/generator"
+                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
-                        Profile
+                        Finder!
                       </a>
                       <a
                         href="/wishlist"
-                        className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
                       </a>
                       <a
                         href="#"
                         onClick={handleLogout}
-                        className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Logout
                       </a>
