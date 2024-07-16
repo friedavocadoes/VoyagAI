@@ -25,11 +25,6 @@ const Layout = ({ children }) => {
     }
   };
 
-  const showUser = () => {
-    
-    pullUser(getUserFromToken());
-  }
-
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 0);
   };
@@ -41,7 +36,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     
-    window.addEventListener('load', showUser);
+    pullUser(getUserFromToken());
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
