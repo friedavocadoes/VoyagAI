@@ -39,10 +39,10 @@ const Generator = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative">
-      <div className="w-full max-w-2xl bg-gray-800 bg-opacity-40 backdrop-blur-[20px] p-[4em] px-[4em] rounded-lg shadow-2xl relative z-2 text-center mt-[7em] mb-20">
-        <h1 className="text-4xl font-bold text-white mb-8">Plan Your Dream Vacation</h1>
-        <p className="text-gray-300 mb-8">With AI, discover the perfect getaway based on your mood, budget, and starting location.</p>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-3xl bg-[#606797] bg-opacity-40 backdrop-blur-[20px] p-20 rounded-lg shadow-2xl relative z-2 text-center mt-32 mb-20 pt-16">
+        <h1 className="text-4xl font-bold text-slate-200 mb-8">Plan Your Dream Vacation</h1>
+        <p className="text-gray-300 mb-8 text-md">With AI, discover the perfect getaway based on your mood, budget, and starting location.</p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
@@ -84,7 +84,8 @@ const Generator = () => {
                     ...props.style,
                     height: '7px',
                     width: '100%',
-                    backgroundColor: '#4a5568',
+                    backgroundColor: '#DFA175',
+                    accentColor: '#DFA175',
                     borderRadius: '3px',
                     margin: '0 10px',
                   }}
