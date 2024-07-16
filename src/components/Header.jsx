@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
                         Profile
                       </a>
                       <a
-                        href="#"
+                        href="/wishlist"
                         className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
@@ -188,7 +188,7 @@ const Layout = ({ children }) => {
                         Profile
                       </a>
                       <a
-                        href="#"
+                        href="/wishlist"
                         className="text-gray-900 block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
