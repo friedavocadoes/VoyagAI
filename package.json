@@ -1,6 +1,6 @@
 {
   "name": "voyagai",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.17.0",
     "@material-tailwind/react": "^2.1.9",
     "@react-leaflet/core": "^2.1.0",
     "axios": "^1.7.2",
