@@ -12,6 +12,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/Contact';
 import Explore from './pages/Explore';
 import WishList from './pages/WishList';
+import Box from './pages/Box';
 import PrivateRoute from './components/PrivateRoute';
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />  {/* About Us page route */}
             <Route path="/contact" element={<ContactUs />} />  {/* Contact Us page route */}
             <Route path="/explore" element={<Explore />} />  {/* Explore page route */}
+            <Route path="/box" element={<Box />} />  {/* Explore page route */}
             <Route
             path="/wishlist"
             element={
