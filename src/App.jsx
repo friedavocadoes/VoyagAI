@@ -29,7 +29,14 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />  {/* Contact Us page route */}
             <Route path="/explore" element={<Explore />} />  {/* Explore page route */}
             <Route path="/box" element={<Box />} />  {/* Explore page route */}
-            <Route path="/wishlist" element={<WishList />} />
+            <Route
+            path="/wishlist"
+            element={
+              <PrivateRoute>
+                <WishList />
+              </PrivateRoute>
+            }
+          />
           </Routes>
         </Body>
         <Routes>

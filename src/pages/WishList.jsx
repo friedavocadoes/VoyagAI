@@ -12,7 +12,7 @@ function App() {
 
     const fetchData = async () => {
       try {
-        const response = await axios.post('http://localhost:5000/wishlist/fetch', { email }, {
+        const response = await axios.post('https://voyagai.onrender.com/wishlist/fetch', { email }, {
           headers: { 'Content-Type': 'application/json' },
         });
 
