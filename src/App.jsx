@@ -32,9 +32,9 @@ function App() {
             <Route
             path="/wishlist"
             element={
-              <PrivateRoute>
+              // <PrivateRoute>
                 <WishList />
-              </PrivateRoute>
+              // </PrivateRoute>
             }
           />
           </Routes>
@@ -43,18 +43,18 @@ function App() {
           <Route
             path="/generator"
             element={
-              <PrivateRoute>
+              // <PrivateRoute>
                 <Generator />
-              </PrivateRoute>
+              // </PrivateRoute>
             }
           />  {/* Generator page route */}
 
           <Route
             path="/results"
             element={
-            <PrivateRoute>
+            // <PrivateRoute>
               <Results />
-            </PrivateRoute>
+            // </PrivateRoute>
             }
           />  {/* Results page route */}
         </Routes>
