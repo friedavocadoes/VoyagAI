@@ -54,12 +54,12 @@ function App() {
                     <h3 className="text-xl font-bold">{item.name}</h3>
                     <p className="text-lg mt-2">{item.description}</p>
                   </div>
-                  <button
+                  {/* <button
                     className="m-2 px-4 py-2 text-white font-bold bg-violet-500 hover:bg-orange-500 hover:scale-105 transition duration-200 ease-in-out rounded-md shadow"  
                     onClick={() => removeFromWishlist(item.name)}
                   >
                     Remove
-                  </button>
+                  </button> */}
                 </div>
               </li>
             ))}

@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
   };
 
   const showUser = () => {
+    
     pullUser(getUserFromToken());
   }
 
@@ -104,7 +105,7 @@ const Layout = ({ children }) => {
                     <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
                       <a
                         href="/generator"
-                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-green-900 hover:bg-green-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Finder!
                       </a>
@@ -179,7 +180,7 @@ const Layout = ({ children }) => {
                     <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
                     <a
                         href="/generator"
-                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-green-800 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-green-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Finder!
                       </a>
