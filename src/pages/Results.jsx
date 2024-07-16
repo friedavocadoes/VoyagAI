@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Loader from '../components/Loader';
-import { collapse } from '@material-tailwind/react';
+import { getEmailFromToken } from '../utils/auth';
 
 const Results = () => {
   const location = useLocation();
@@ -10,10 +10,26 @@ const Results = () => {
   const [results, setResults] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const colorToggle = (result, index) => {
+  const colorToggle = async (result, index) => {
     let fav = document.getElementById(`wish${index}`);
     fav.classList.toggle('fill-red-500');
-    console.log(result); 
+
+
+    if (fav.classList.contains('fill-red-500')) {
+      console.log(result);
+
+      const email = getEmailFromToken();
+
+      try {
+        const response = await axios.post('http://localhost:5000/wishlist/save', { email, result }, {
+          headers: { 'Content-Type': 'application/json' },
+        });
+        
+      } catch (error) {
+        console.error('Error fetching results:', error);
+      }
+    }
+
   };
   
   useEffect(() => {

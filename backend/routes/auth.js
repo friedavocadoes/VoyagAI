@@ -1,8 +1,7 @@
-
 import express from 'express';
 const router = express.Router();
 import User from '../modal/user.js'
-// import bcrypt from 'bcryptjs';
+import Wishlist from '../modal/wishlist.js';
 import jwt from 'jsonwebtoken';
 
 
@@ -21,6 +20,12 @@ router.post('/signup', async (req, res) => {
       return res.status(400).json({ message: 'User already exists' });
     }
 
+    let wishlistInit = new Wishlist({
+      email,
+    });
+    
+    await wishlistInit.save();
+
     user = new User({
       name,
       email,
@@ -28,11 +33,11 @@ router.post('/signup', async (req, res) => {
     });
 
     await user.save();
-    console.log(user.name);
     const payload = {
       user: {
         id: user.id,
         name: user.name,
+        email: user.email,
       },
     };
 
@@ -49,25 +54,25 @@ router.post('/signup', async (req, res) => {
 
 router.post('/signin', async (req, res) => {
   const { email, password } = req.body;
+  // console.log(email);
 
   try {
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
-
+    console.log(user.email);
     const isMatch = await user.matchPassword(password);
     if (!isMatch) {
       console.log("this");
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    console.log(user.name);
-
     const payload = {
       user: {
         id: user.id,
         name: user.name,
+        email: user.email,
       },
     };
 

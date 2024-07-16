@@ -36,11 +36,10 @@ const Layout = ({ children }) => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     window.location.reload(false);
-
   };
 
   useEffect(() => {
-    // window.addEventListener('scroll', handleScroll);
+    
     window.addEventListener('load', showUser);
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -50,9 +49,6 @@ const Layout = ({ children }) => {
     <div>
       <header
         id="navbar"
-        // className={`fixed inset-x-0 top-0 z-10 transition duration-100 ease-in-out ${
-        //   isScrolled ? 'bg-gray-900 bg-opacity-0 backdrop-filter backdrop-blur-md' : 'bg-transparent'
-        // }`}
         className="fixed inset-x-0 top-0 z-10 transition duration-100 ease-in-out bg-gray-900 bg-opacity-0 backdrop-filter backdrop-blur-md"
       >
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
