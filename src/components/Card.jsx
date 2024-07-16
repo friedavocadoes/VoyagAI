@@ -1,6 +1,3 @@
-// src/components/Card.jsx
-
-// src/components/Card.jsx
 
 import React, { useState } from 'react';
 
@@ -21,7 +18,7 @@ const Card = ({ title, imageSrc }) => {
       <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h4 className="text-xl font-semibold mb-2">{title}</h4>
-        <p className="text-gray-600">Description of the place goes here.</p>
+        <p className="text-gray-600"></p>
         {/* Wishlist Button */}
         {isAddedToWishlist ? (
           <button className="mt-2 bg-gray-200 text-gray-600 py-1 px-4 rounded-lg cursor-not-allowed">
