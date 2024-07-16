@@ -31,24 +31,11 @@ function App() {
             <Route path="/box" element={<Box />} />  {/* Explore page route */}
             <Route
             path="/wishlist"
-            element={
-    
-                <WishList />
- 
-            }
-          />
+            element={<WishList />}/>
           </Routes>
         </Body>
         <Routes>
-          <Route
-            path="/generator"
-            element={
-              
-                <Generator />
-              
-            }
-          />  {/* Generator page route */}
-
+          <Route path="/generator" element={<Generator />}/>
           <Route
             path="/results"
             element={
