@@ -21,7 +21,7 @@ const Results = () => {
       const email = getEmailFromToken();
 
       try {
-        const response = await axios.post('http://localhost:5000/wishlist/save', { email, result }, {
+        const response = await axios.post('https://voyagai.onrender.com/wishlist/save', { email, result }, {
           headers: { 'Content-Type': 'application/json' },
         });
         
@@ -39,7 +39,7 @@ const Results = () => {
       setIsLoading(true);
       if (data) {
         try {
-          const response = await axios.post('http://localhost:5000/search', data, {
+          const response = await axios.post('https://voyagai.onrender.com/search', data, {
             headers: { 'Content-Type': 'application/json' },
           });
           setResults(response.data.vacation_spots);
