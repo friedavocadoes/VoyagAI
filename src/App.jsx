@@ -29,19 +29,25 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />  {/* Contact Us page route */}
             <Route path="/explore" element={<Explore />} />  {/* Explore page route */}
             <Route path="/box" element={<Box />} />  {/* Explore page route */}
-            <Route
-            path="/wishlist"
-            element={<WishList />}/>
+            <Route path="/wishlist" element={<PrivateRoute><WishList /></PrivateRoute>}/>
           </Routes>
         </Body>
         <Routes>
-          <Route path="/generator" element={<Generator />}/>
+          <Route
+            path="/generator"
+            element={
+              <PrivateRoute>
+                <Generator />
+              </PrivateRoute>
+            }
+          />  {/* Generator page route */}
+
           <Route
             path="/results"
             element={
-            // <PrivateRoute>
+            <PrivateRoute>
               <Results />
-            // </PrivateRoute>
+            </PrivateRoute>
             }
           />  {/* Results page route */}
         </Routes>
