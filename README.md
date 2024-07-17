@@ -15,4 +15,4 @@ npm run dev
 
 ## Active Hostings
 
-#### Service is currently hosted live on [https://voyagai.onrender.com]
+#### Service is currently hosted live on https://voyagai.onrender.com
