@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
                 {open && (
                   <div className="absolute z-60 right-0 w-full mt-1 origin-top-right rounded-md shadow-lg md:w-48">
                     {/* backdrop blur here does not work. why? */}
-                    <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
+                    <div className=" px-1 py-1 bg-slate-300 rounded-sm shadow bg-opacity-90 backdrop-blur-lg">
                       <a
                         href="/generator"
                         className="text-gray-900 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-green-900 hover:bg-green-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -172,7 +172,7 @@ const Layout = ({ children }) => {
                 {open && (
                   <div className="absolute z-100 right-0 w-full mt-1 origin-top-right rounded-md shadow-lg md:w-48">
                     {/* backdrop blur here does not work. why? */}
-                    <div className=" px-1 py-1 bg-slate-400 rounded-sm shadow bg-opacity-80 backdrop-blur-lg">
+                    <div className=" px-1 py-1 bg-slate-300 rounded-sm shadow bg-opacity-90 backdrop-blur-lg">
                     <a
                         href="/generator"
                         className="text-gray-900 block px-4 py-2 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-green-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
