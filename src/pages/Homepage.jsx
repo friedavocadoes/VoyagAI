@@ -18,7 +18,7 @@ const Homepage = () => {
         src="/scene.png"
         className="object-cover mx-auto pt-15"
       />
-      <h1 className="text-3xl font-bold tracking-tight text-[#767fb4] sm:text-6xl pb-20 pt-10">Your <span className="text-[#f9b17a] ">AI </span> Power Trip</h1>
+      <h1 className="text-3xl font-bold tracking-tight text-[#767fb4] sm:text-6xl pb-20 pt-10">Your <span className="text-[#f9b17a] ">AI </span> Powered Trip</h1>
       <div className="flex flex-wrap justify-center items-center px-4 py-2 space-y-8 pb-10">
           <section className="w-full flex flex-col space-y-4 md:w-1/2">  {/* Adjust width on medium screens */}
             <h2 className="text-4xl font-bold text-white">The Most Optimal</h2>

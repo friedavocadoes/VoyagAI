@@ -14,10 +14,10 @@ const Card = ({ title, imageSrc }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-slate-800 rounded-lg shadow-md overflow-hidden">
       <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
-        <h4 className="text-xl font-semibold mb-2">{title}</h4>
+        <h4 className="text-xl text-white font-semibold mb-2">{title}</h4>
         <p className="text-gray-600"></p>
         {/* Wishlist Button */}
         {isAddedToWishlist ? (

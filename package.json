@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "api": "nodemon backend/index.js",
-    "dev": "vite --host",
+    "dev": "vite",
     "start": "concurrently \"npm run dev\" \"npm run api\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
