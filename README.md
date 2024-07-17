@@ -1,6 +1,4 @@
-# VoyagAI - Pre-Alpha
-
-#### Currently just goes with a flow, everything works as expected (hopefully).
+# VoyagAI
 
 #### Click on the `Start planning with AI` after installation to play with it.
 
@@ -38,6 +36,7 @@ npm start
 - Click on `Start planning with AI`
 - Signup and/or Login.
 - Play with the form and watch the results!
+
 
 ## Authors💖
 
