@@ -9,6 +9,7 @@
 To run this project, you will need to add the following environment variables to your .env file or windows environment variables.
 
 `GEM_API_KEY`
+`MONGO_URI`
 
 > [!NOTE]
 > Acquire your Gemini API key from [Gemini's API documentation](https://ai.google.dev/gemini-api/docs/api-key)
