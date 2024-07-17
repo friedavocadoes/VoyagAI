@@ -6,7 +6,7 @@
 
 Backend requires the follwing environment variable. Add it to `.env` file or system environment variables.
 
-`GEM_API_KEY`  (incorporated in the hosted server)
+`GEM_API_KEY` - (incorporated in the hosted server)
 
 > [!NOTE]
 > Acquire your Gemini API key from [Gemini's API documentation](https://ai.google.dev/gemini-api/docs/api-key)
