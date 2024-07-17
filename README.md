@@ -17,7 +17,7 @@ To run this project, you will need to add the following environment variables to
 > Backend server is alrready set-up and running. Check backend branch for more information.
 
 - Development script:
-```shell
+```node
 npm i
 npm run dev
 ```
