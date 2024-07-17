@@ -20,7 +20,7 @@ const Card = ({ title, imageSrc }) => {
         <h4 className="text-xl text-white font-semibold mb-2">{title}</h4>
         <p className="text-gray-600"></p>
         {/* Wishlist Button */}
-        {isAddedToWishlist ? (
+        {/* {isAddedToWishlist ? (
           <button className="mt-2 bg-gray-200 text-gray-600 py-1 px-4 rounded-lg cursor-not-allowed">
             Added to Wishlist
           </button>
@@ -31,7 +31,7 @@ const Card = ({ title, imageSrc }) => {
           >
             Add to Wishlist
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
