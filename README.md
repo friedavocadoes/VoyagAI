@@ -7,7 +7,7 @@
 To run this project, you will need to add the following environment variables to your .env file or windows environment variables.
 
 `MONGO_URI`
-
+<br>
 > [!TIP]
 > Follow [This Guide](https://gargankush.medium.com/storing-api-keys-as-environmental-variable-for-windows-linux-and-mac-and-accessing-it-through-974ba7c5109f) to add the variable to system directly if adding to `.env` file doesnt work
 
