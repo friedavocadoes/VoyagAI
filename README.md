@@ -1,6 +1,6 @@
 # Backend
 
-This branch contains all the routes, authentication & MongoDB models for VoyageAI.
+#### This branch contains all the routes, authentication & MongoDB models for VoyageAI.
 
 ## Installation and Hosting
 
