@@ -29,6 +29,7 @@ npm run dev
 npm i
 npm run build
 
+// If you want to view
 npm preview
 ```
 
