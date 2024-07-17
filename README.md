@@ -12,3 +12,7 @@ This is the backend branch for VoyageAI.
 npm i
 npm run dev
 ```
+
+## Active Hostings
+
+#### Service is currently hosted live on [https://voyagai.onrender.com]
