@@ -17,7 +17,7 @@ const Signup = () => {
       const res = await axios.post('https://voyagai.onrender.com/api/auth/signup', { name, email, password });
       console.log(res.data.token);
       localStorage.setItem('token', res.data.token);
-      window.location.href = '/login';
+      window.location.href = '/generator';
     } catch (error) {
       setError(error.response.data.message);
     }
