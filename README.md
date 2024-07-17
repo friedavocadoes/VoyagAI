@@ -18,18 +18,22 @@ To run this project, you will need to add the following environment variables to
 ## Installation
 
 > [!IMPORTANT]
-> This project contains two working node directories.
+> Backend server is alrready set-up and running. Check backend branch for more information.
 
-- Run the following commands on project terminal:
+- Development script:
+```shell
+npm i
+npm run dev
+```
+
+
+- Deployment script:
 
 ```shell
 npm i
-cd backend
-npm i
-cd ..
+npm run build
 
-npm start
-
+npm preview
 ```
 
 - Go to http://localhost:5173 (default React port).
