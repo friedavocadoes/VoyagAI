@@ -106,14 +106,14 @@ const Layout = ({ children }) => {
                       </a>
                       <a
                         href="/wishlist"
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-pink-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
                       </a>
                       <a
                         href="#"
                         onClick={handleLogout}
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-red-300 focus:outline-none focus:shadow-outline"
                       >
                         Logout
                       </a>
@@ -181,14 +181,14 @@ const Layout = ({ children }) => {
                       </a>
                       <a
                         href="/wishlist"
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-pink-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Wishlist
                       </a>
                       <a
                         href="#"
                         onClick={handleLogout}
-                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="text-gray-900 block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-sm hover:text-gray-900 focus:text-gray-900 hover:bg-red-300 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       >
                         Logout
                       </a>
