@@ -20,6 +20,10 @@ router.post('/signup', async (req, res) => {
       return res.status(400).json({ message: 'User already exists' });
     }
 
+    if (password.lenght < 8) {
+      return res.status(400).json({ message: 'Password should be 7 characters or more' });
+    }
+
     let wishlistInit = new Wishlist({
       email,
     });
