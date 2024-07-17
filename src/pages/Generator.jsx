@@ -144,7 +144,7 @@ const Generator = () => {
           </div>
           
           <button type="submit" className="w-full bg-[#DFA175] text-white py-3 rounded-lg hover:bg-[#B6B6BF] focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            Generate Plan
+            Generate Plans
           </button>
         </form>
       </div>
