@@ -14,7 +14,7 @@ To run this project, you will need to add the following environment variables to
 ## Installation
 
 > [!IMPORTANT]
-> Backend server is alrready set-up and running. Check backend branch for more information.
+> Backend server is already set-up and running. Check backend branch for more information.
 
 - Development script:
 ```node
