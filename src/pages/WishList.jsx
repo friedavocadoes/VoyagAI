@@ -6,6 +6,7 @@ function App() {
   const [wishlistItems, setWishlistItems] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [itemPosition, setItemPosition] = useState(null);
+  const [loading, setLoading] = useState(true);
   const email = getEmailFromToken();
 
   useEffect(() => {
@@ -27,15 +28,13 @@ function App() {
         setWishlistItems(arrMan);
       } catch (error) {
         console.error('Error fetching results:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
-
-  // const removeFromWishlist = (itemId) => {
-  //   setWishlistItems(wishlistItems.filter((item) => item.name !== itemId));
-  // };
 
   const handleItemClick = (item, e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -91,9 +90,26 @@ function App() {
   return (
     <div className="min-h-screen pt-10 relative">
       <section className={`container mx-auto lg:px-4 sm:px-0 py-16 pt-20 ${selectedItem ? 'blur-sm' : ''}`}>
-        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl text-center pb-5">My Wishlist</h2>
-        <p className="text-violet-500 font-mono text-xl text-center pb-10">Curate your dream trips! Add and remove them as you explore.</p>
-        {wishlistItems.length === 0 ? (
+        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl text-center pb-5 mb-7">My Wishlist</h2>
+        
+        {loading ? (
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[1, 2, 3].map((_, index) => (
+              <li
+                key={index}
+                className="bg-gray-800 rounded-lg shadow-md animate-pulse "
+              >
+                <div className="flex items-center justify-between w-full px-4 py-5">
+                  <div className="text-white pl-4 w-full">
+                    <div className="h-4 bg-gray-700 rounded w-48 mb-2"></div>
+                    <div className="h-4 bg-gray-700 rounded w-1/2 mb-2"></div>
+                    <div className="h-4 bg-gray-700 rounded w-60"></div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : wishlistItems.length === 0 ? (
           <p className="text-orange-500 font-mono text-lg text-center">Your wishlist is currently empty.</p>
         ) : (
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -127,7 +143,7 @@ function App() {
               top: itemPosition.top,
               left: itemPosition.left,
               width: itemPosition.width,
-              // transform: selectedItem ? 'scale(1) rotate(0)' : 'scale(0) rotate(-10deg)',
+
             }}
           >
             <h3 className="text-2xl font-bold mb-4">{selectedItem.name}</h3>
