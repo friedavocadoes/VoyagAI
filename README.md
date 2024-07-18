@@ -44,5 +44,4 @@ npm preview
 - [@friedavocadoes](https://www.github.com/friedavocadoes)
 - [@LuthfiNassir](https://github.com/LuthfiNassir)
 - [@Archit5655](https://github.com/Archit5655)
-- [@yashikaBhandari](https://github.com/yashikaBhandari)
-- [@KalpitChaudhary](https://github.com/KalpitChaudhary)
+
