@@ -41,7 +41,7 @@ const Results = () => {
       if (data) {
         try {
           const response = await axios.post(
-            "http://localhost:5000/search",
+            "https://voyagai.onrender.com/search",
             data,
             {
               headers: { "Content-Type": "application/json" },
